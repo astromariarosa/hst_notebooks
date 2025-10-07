@@ -6,4 +6,4 @@ on:
 
 jobs:
   Scheduled:
-   uses: spacetelescope/notebook-ci-actions/.github/workflows/broken_link_checker.yml@v3
+   uses: astromariarosa/notebook-ci-actions/.github/workflows/broken_link_checker.yml@v3
