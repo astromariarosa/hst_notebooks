@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>HASP Data Diagnostic Notebook &#8212; HST Notebooks</title>
   
@@ -29,40 +28,49 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2XDY0S4S5Q"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/HASP/DataDiagnostic/DataDiagnostics';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -164,7 +172,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -267,6 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">HASP</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">HASP Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Setup/Setup.html">Installing the Hubble Advanced Spectral Products Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../CoaddTutorial/CoaddTutorial.html">Inputting User Data using the Hubble Advanced Spectral Products Script</a></li>
 
@@ -279,8 +299,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l1"><a class="reference internal" href="../WavelengthAdjustment/WavelengthAdjustment.html">Wavelength Adjustments for Running the Hubble Advanced Spectral Products (HASP) Script</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../COSLifetimePositions/COSLifetimePositions.html">Combining COS Data from Multiple Lifetime Positions and Central Wavelengths</a></li>
-
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HSLA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/README.html">HSLA Notebooks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">NICMOS</span></p>
 <ul class="nav bd-sidenav">
@@ -364,9 +386,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -391,14 +413,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/HASP/DataDiagnostic/DataDiagnostics.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -556,9 +578,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -630,13 +652,13 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="hasp-data-diagnostic-notebook">
-<h1>HASP Data Diagnostic Notebook<a class="headerlink" href="#hasp-data-diagnostic-notebook" title="Permalink to this heading">#</a></h1>
+<h1>HASP Data Diagnostic Notebook<a class="headerlink" href="#hasp-data-diagnostic-notebook" title="Link to this heading">#</a></h1>
 <hr>
 <section id="this-notebook-will-walk-you-through-how-to-examine-the-input-spectra-for-the-hasp-coadd-code-and-determine-what-was-and-was-not-included-in-the-co-added-data-product-output">
-<h2>This notebook will walk you through how to examine the input spectra for the HASP <code class="docutils literal notranslate"><span class="pre">coadd</span></code> code and determine what was and was not included in the co-added data product output.<a class="headerlink" href="#this-notebook-will-walk-you-through-how-to-examine-the-input-spectra-for-the-hasp-coadd-code-and-determine-what-was-and-was-not-included-in-the-co-added-data-product-output" title="Permalink to this heading">#</a></h2>
+<h2>This notebook will walk you through how to examine the input spectra for the HASP <code class="docutils literal notranslate"><span class="pre">coadd</span></code> code and determine what was and was not included in the co-added data product output.<a class="headerlink" href="#this-notebook-will-walk-you-through-how-to-examine-the-input-spectra-for-the-hasp-coadd-code-and-determine-what-was-and-was-not-included-in-the-co-added-data-product-output" title="Link to this heading">#</a></h2>
 </section>
 <section id="learning-goals">
-<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h2>
+<h2>Learning Goals<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <p>By the end of this tutorial, you will:</p>
 <ul class="simple">
 <li><p>Understand the reasons an input spectrum may be rejected from a co-added data product</p></li>
@@ -646,25 +668,25 @@ document.write(`
 </ul>
 </section>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<p><strong>0. <span class="xref myst">Introduction</span></strong></p>
-<p><strong>1. <span class="xref myst">Example 1: Two COS datasets rejected for different reasons</span></strong></p>
-<p>- 1.1 <span class="xref myst">Obtaining Data Products</span></p>
-<p>- 1.2 <span class="xref myst">Examining Output Logs</span></p>
-<p>- 1.3 <span class="xref myst">Plotting Constituent Spectra</span></p>
-<p>- 1.4 <span class="xref myst">Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code></span></p>
-<p><strong>2. <span class="xref myst">Example 2: A STIS dataset with <code class="docutils literal notranslate"><span class="pre">POSTARG</span></code> offsets</span></strong></p>
-<p>- 2.1 <span class="xref myst">Obtaining Data Products</span></p>
-<p>- 2.2 <span class="xref myst">Examining Output Logs</span></p>
-<p>- 2.3 <span class="xref myst">Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code></span></p>
-<p><strong>3. <span class="xref myst">Example 3: A STIS dataset with rejected flux</span></strong></p>
-<p>- 3.1 <span class="xref myst">Obtaining Data Products</span></p>
-<p>- 3.2 <span class="xref myst">Examining Output Logs</span></p>
-<p>- 3.3 <span class="xref myst">Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code></span></p>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<p><strong>0. <a class="reference internal" href="#introduction"><span class="xref myst">Introduction</span></a></strong></p>
+<p><strong>1. <a class="reference internal" href="#cosweirddata"><span class="xref myst">Example 1: Two COS datasets rejected for different reasons</span></a></strong></p>
+<p>- 1.1 <a class="reference internal" href="#data1"><span class="xref myst">Obtaining Data Products</span></a></p>
+<p>- 1.2 <a class="reference internal" href="#logs1"><span class="xref myst">Examining Output Logs</span></a></p>
+<p>- 1.3 <a class="reference internal" href="#plots1"><span class="xref myst">Plotting Constituent Spectra</span></a></p>
+<p>- 1.4 <a class="reference internal" href="#coadd1"><span class="xref myst">Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code></span></a></p>
+<p><strong>2. <a class="reference internal" href="#stisdithers"><span class="xref myst">Example 2: A STIS dataset with <code class="docutils literal notranslate"><span class="pre">POSTARG</span></code> offsets</span></a></strong></p>
+<p>- 2.1 <a class="reference internal" href="#data2"><span class="xref myst">Obtaining Data Products</span></a></p>
+<p>- 2.2 <a class="reference internal" href="#logs2"><span class="xref myst">Examining Output Logs</span></a></p>
+<p>- 2.3 <a class="reference internal" href="#coadd2"><span class="xref myst">Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code></span></a></p>
+<p><strong>3. <a class="reference internal" href="#stisflux"><span class="xref myst">Example 3: A STIS dataset with rejected flux</span></a></strong></p>
+<p>- 3.1 <a class="reference internal" href="#data3"><span class="xref myst">Obtaining Data Products</span></a></p>
+<p>- 3.2 <a class="reference internal" href="#logs3"><span class="xref myst">Examining Output Logs</span></a></p>
+<p>- 3.3 <a class="reference internal" href="#coadd3"><span class="xref myst">Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code></span></a></p>
 <p><a id = introduction></a></p>
 </section>
 <section id="introduction">
-<h2>0. Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>0. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://github.com/spacetelescope/hasp">Hubble Advanced Spectral Products (HASP) <code class="docutils literal notranslate"><span class="pre">coadd</span></code> code</a> is a script that co-adds spectra of the same target within a program. This software is able to co-add data taken with the spectrographs onboard the <a class="reference external" href="https://www.stsci.edu/hst">Hubble Space Telescope (HST)</a>; the <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/stis">Space Telescope Imaging Spectrograph (STIS)</a> and the <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/cos">Cosmic Origins Spectrograph (COS)</a>. The <a class="reference external" href="https://archive.stsci.edu/missions-and-data/hst/hasp">Hubble Spectroscopic Legacy Archive (HSLA)</a> uses this script to co-add these instruments’ data from <a class="reference external" href="https://archive.stsci.edu/">The Mikulski Archive for Space Telescopes (MAST)</a> to create high-quality spectra with a broad wavelength coverage (whenever possible from the ultraviolet to the near-infrared) that is publicly available for the scientific community. The script first co-adds the observations for each grating for a given visit, then it combines all gratings for the observation set. Finally, it co-adds the spectra of each observation set in the program to produce a fully co-added spectra for each target in a program. <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/cos/documentation/instrument-science-reports-isrs/_documents/ISR2024-01.pdf">Check out the COS 2024-1 ISR for more information about the HASP script and products</a>.</p>
 <p>The data fed into the <code class="docutils literal notranslate"><span class="pre">coadd</span></code> code from each program are selected via a MAST archive search query. This query performs some filtering at the same time and rejects certain bad quality datasets. Then, the <code class="docutils literal notranslate"><span class="pre">coadd</span></code> script itself performs another series of checks on the input spectra before computing the co-added data products. Lastly, while <code class="docutils literal notranslate"><span class="pre">coadd</span></code> is running, it will check the flux of the input data in each wavelength bin for a given mode against an initial coadd that includes all input data. If the median flux of an input spectrum is lower than a given threshold against the co-add, it will be removed. <code class="docutils literal notranslate"><span class="pre">coadd</span></code> will iterate until no more spectra are rejected.</p>
 <p>There are several different reasons an exposure could be rejected before the co-addition is running. These fall into three categories. First, the data in a given program may have quality issues that lead to its removal. Second, there are some observation configurations that <code class="docutils literal notranslate"><span class="pre">coadd</span></code> is not equipped to handle. Last, the target itself may pose an issue, such as for moving targets, or the target flux may be intrinsically variable, making the <code class="docutils literal notranslate"><span class="pre">coadd</span></code> flux filter reject good spectra. Finer details of these rejection criteria are summarized below:</p>
@@ -742,7 +764,7 @@ document.write(`
 <p>The HSLA team chose to reject these cases after careful analysis, but understand there are always some exceptions to these rules that we do not handle. This custom co-addition notebook will show users how to find out why a dataset was rejected and how to produce their own co-adds in cases where the data are still valuable.</p>
 <p><em>Please note that the format and text in the log file may change slightly as new code builds are released. This notebook was last updated in Fall 2024 to reflect such text changes in the logs.</em></p>
 <section id="imports">
-<h3>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h3>
+<h3>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h3>
 <p>We will be using multiple libraries to retrieve and analyze data. We will use:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">astroquery.mast</span> <span class="pre">Observations</span></code> to download COS and STIS data</p></li>
@@ -762,16 +784,16 @@ document.write(`
 <p>This will download the dependencies that are necessary to run this current notebook. Let’s import all of our packages that we will use in this notebook and print our <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment by running the next cell:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
-<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">vstack</span>
-<span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Observations</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">astropy.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">fits</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astropy.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">vstack</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astroquery.mast</span><span class="w"> </span><span class="kn">import</span> <span class="n">Observations</span>
 
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">glob</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 <span class="o">%</span><span class="k">matplotlib</span> widget
 
 <span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;figure.figsize&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">6</span>
@@ -786,7 +808,7 @@ document.write(`
 <p>We will define a function that will be utilized throughout the notebook when downloading MAST data using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">consolidate_files</span><span class="p">(</span><span class="n">data_path</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">consolidate_files</span><span class="p">(</span><span class="n">data_path</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Consolidate all files to single directory; necessary for HASP script run.</span>
 <span class="sd">    ---------------</span>
@@ -839,10 +861,10 @@ document.write(`
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="example-1-two-cos-datasets-rejected-for-different-reasons">
-<h1>Example 1: Two COS datasets rejected for different reasons<a class="headerlink" href="#example-1-two-cos-datasets-rejected-for-different-reasons" title="Permalink to this heading">#</a></h1>
+<h1>Example 1: Two COS datasets rejected for different reasons<a class="headerlink" href="#example-1-two-cos-datasets-rejected-for-different-reasons" title="Link to this heading">#</a></h1>
 <p><a id = data1></a></p>
 <section id="obtaining-data-products">
-<h2>1.1 Obtaining Data Products<a class="headerlink" href="#obtaining-data-products" title="Permalink to this heading">#</a></h2>
+<h2>1.1 Obtaining Data Products<a class="headerlink" href="#obtaining-data-products" title="Link to this heading">#</a></h2>
 <p>For this example, we will be looking at Program ID 12715, which observed four flux standard white dwarf stars with COS.
 We will use <code class="docutils literal notranslate"><span class="pre">astroquery</span></code> to download the calibrated and coadded datasets for this program. For a more in-depth tutorial on downloading this data, please check out the <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/CoaddTutorial">CoaddTutorial.ipynb</a> notebook in this repository.</p>
 <p>We will create a folder for the <code class="docutils literal notranslate"><span class="pre">X1D</span></code> and <code class="docutils literal notranslate"><span class="pre">X1DSUM</span></code> products, called <code class="docutils literal notranslate"><span class="pre">./12715</span></code>, and a subfolder called <code class="docutils literal notranslate"><span class="pre">products</span></code>, which will store the coadded data. The log file for this coadd is also available for download on MAST, but a static version has been provided in this repository for convenience. This log file is located in <code class="docutils literal notranslate"><span class="pre">./logfiles</span></code> and is called <code class="docutils literal notranslate"><span class="pre">HASP_12715.out</span></code>. Log files are text files that can be opened and viewed in any text editor.</p>
@@ -938,7 +960,7 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p><a id = logs1></a></p>
 </section>
 <section id="examining-output-logs-and-headers">
-<h2>1.2 Examining Output Logs and Headers<a class="headerlink" href="#examining-output-logs-and-headers" title="Permalink to this heading">#</a></h2>
+<h2>1.2 Examining Output Logs and Headers<a class="headerlink" href="#examining-output-logs-and-headers" title="Link to this heading">#</a></h2>
 <p>Now lets open the <code class="docutils literal notranslate"><span class="pre">coadd</span></code> output log to see which files were used in the coadd.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -953,27 +975,27 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 </div>
 </div>
 <p>As stated in the introduction, files can be removed from the co-added products in three steps. First, some files are excluded via a MAST archive query before they are even fed into <code class="docutils literal notranslate"><span class="pre">coadd</span></code>. Everything in the log file above the line that states <code class="docutils literal notranslate"><span class="pre">HASP</span> <span class="pre">version</span> <span class="pre">X.X</span></code> is output from this query. So, in this example, we can see that all but one of the files from MAST were fed into the <code class="docutils literal notranslate"><span class="pre">coadd</span></code> script. The rootname of the file (<code class="docutils literal notranslate"><span class="pre">lbui11faq</span></code>) and the reason for its removal by MAST are shown and we will take a closer look at the reason later. The rest of the log file gives the output from <code class="docutils literal notranslate"><span class="pre">coadd</span></code> itself. The <code class="docutils literal notranslate"><span class="pre">coadd</span></code> script output will indicate when a file is removed, giving both the filename and the reason, below the line that states <code class="docutils literal notranslate"><span class="pre">Ullyses</span> <span class="pre">version</span> <span class="pre">X.X.X</span></code>. Typically, data with observing issues are removed by the MAST query, while observation or target parameter issues are removed in <code class="docutils literal notranslate"><span class="pre">coadd</span></code>. Looking through the log file, we can see 9 other files were removed by <code class="docutils literal notranslate"><span class="pre">coadd</span></code> in this program:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="o">...</span><span class="n">lbui51l6q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51lcq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51lrq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51ltq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51lvq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51m5q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51m7q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51mbq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
-<span class="n">File</span> <span class="o">...</span><span class="n">lbui51mdq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span> <span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYR0</span> 
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">File</span> <span class="o">...</span><span class="n">lbui51l6q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51lcq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51lrq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51ltq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51lvq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51m5q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51m7q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51mbq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYRO</span> 
+<span class="n">File</span> <span class="o">...</span><span class="n">lbui51mdq_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="n">removed</span> <span class="kn">from</span><span class="w"> </span><span class="nn">products</span> <span class="n">because</span> <span class="n">FGSLOCK</span> <span class="o">=</span> <span class="n">FINE</span><span class="o">/</span><span class="n">GYR0</span> 
 </pre></div>
 </div>
 <p>This program does not have any data that is removed by the <code class="docutils literal notranslate"><span class="pre">coadd</span></code> flux checker. If a dataset is removed, it will be printed with lines such as:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Using</span> <span class="n">a</span> <span class="n">maximum</span> <span class="n">SNR</span> <span class="n">of</span> <span class="mi">20</span> <span class="ow">in</span> <span class="n">flux</span><span class="o">-</span><span class="n">based</span> <span class="n">filtering</span> \
 <span class="n">Segment</span> <span class="c1">#1 from file ...lede16w8q_x1d.fits has scaled median = -54.04932196288165 \</span>
-<span class="n">Removing</span> <span class="n">file</span> <span class="o">...</span><span class="n">lede16w8q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="kn">from</span> <span class="nn">product</span>
+<span class="n">Removing</span> <span class="n">file</span> <span class="o">...</span><span class="n">lede16w8q_x1d</span><span class="o">.</span><span class="n">fits</span> <span class="kn">from</span><span class="w"> </span><span class="nn">product</span>
 </pre></div>
 </div>
 <p>Next, we will write a function to parse the output logs and return lists of the files that were rejected.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">find_rejects</span><span class="p">(</span><span class="n">logpath</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">listofallfiles</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">find_rejects</span><span class="p">(</span><span class="n">logpath</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">listofallfiles</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function parses the coadd output log file to make a list of files that</span>
 <span class="sd">    were input to the coadd script. The function uses the PID to find the lines</span>
@@ -1040,13 +1062,13 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 </div>
 </div>
 <p>We can see 10 files were removed before the co-addition computations were started, and none were removed during the run by the flux checker. We already knew the files in Visit 51 were removed by <code class="docutils literal notranslate"><span class="pre">coadd</span></code> (and why) by looking at the output log above. The file from Visit 11 (<code class="docutils literal notranslate"><span class="pre">lbui11faq_x1d.fits</span></code>) was removed by the MAST query due to “low quality.” We can investigate the rejections from both visits further by inspecting the header keywords of the input spectra.</p>
-<p>In the following cell, we make a function to read the file headers for each input spectrum. Most of the reasons for rejection that are listed in the <span class="xref myst">Introduction</span> section can be found either in the primary or first extension headers. This function can be used to inspect both COS and STIS extracted data, both <code class="docutils literal notranslate"><span class="pre">x1d</span></code> or <code class="docutils literal notranslate"><span class="pre">sx1</span></code> files. Note that some keywords, such as those describing the offset patterns, are only included in STIS files.</p>
-<p>There are a few other keywords not listed in the <span class="xref myst">Introduction</span> that are useful to assess as well. These include the quality comments (<code class="docutils literal notranslate"><span class="pre">QUALCOM1</span></code>, <code class="docutils literal notranslate"><span class="pre">QUALCOM2</span></code>, <code class="docutils literal notranslate"><span class="pre">QUALCOM3</span></code>), the file date (<code class="docutils literal notranslate"><span class="pre">DATE</span></code>), and calibration software version (<code class="docutils literal notranslate"><span class="pre">CAL_VER</span></code>).</p>
+<p>In the following cell, we make a function to read the file headers for each input spectrum. Most of the reasons for rejection that are listed in the <a class="reference internal" href="#introduction"><span class="xref myst">Introduction</span></a> section can be found either in the primary or first extension headers. This function can be used to inspect both COS and STIS extracted data, both <code class="docutils literal notranslate"><span class="pre">x1d</span></code> or <code class="docutils literal notranslate"><span class="pre">sx1</span></code> files. Note that some keywords, such as those describing the offset patterns, are only included in STIS files.</p>
+<p>There are a few other keywords not listed in the <a class="reference internal" href="#introduction"><span class="xref myst">Introduction</span></a> that are useful to assess as well. These include the quality comments (<code class="docutils literal notranslate"><span class="pre">QUALCOM1</span></code>, <code class="docutils literal notranslate"><span class="pre">QUALCOM2</span></code>, <code class="docutils literal notranslate"><span class="pre">QUALCOM3</span></code>), the file date (<code class="docutils literal notranslate"><span class="pre">DATE</span></code>), and calibration software version (<code class="docutils literal notranslate"><span class="pre">CAL_VER</span></code>).</p>
 <p>The quality comments can hold information about the quality of a dataset. For example, they may have phrases like <code class="docutils literal notranslate"><span class="pre">Guide</span> <span class="pre">star</span> <span class="pre">acquisition</span> <span class="pre">failed.</span> <span class="pre">Actual</span> <span class="pre">guide</span> <span class="pre">mode</span> <span class="pre">is</span> <span class="pre">gyro</span></code> or <code class="docutils literal notranslate"><span class="pre">COS</span> <span class="pre">internal</span> <span class="pre">shutter</span> <span class="pre">closed.</span> <span class="pre">No</span> <span class="pre">counts</span> <span class="pre">in</span> <span class="pre">exposure</span></code>. If there is nothing to note for the dataset, the quality comments will be blank, but note that sometimes this can be inaccurate, as it relies on PIs to file problem reports. For STIS, these keys are in the <code class="docutils literal notranslate"><span class="pre">x1d</span></code> or <code class="docutils literal notranslate"><span class="pre">sx1</span></code> file headers. For COS, they are located in the <code class="docutils literal notranslate"><span class="pre">x1dsum</span></code> files that CalCOS creates, which are the sum of <code class="docutils literal notranslate"><span class="pre">FP-POS</span></code> exposures for a given observing mode in each visit. While these keywords do exist in COS <code class="docutils literal notranslate"><span class="pre">x1d</span></code> files, they will only be populated with comments in the <code class="docutils literal notranslate"><span class="pre">x1dsums</span></code>. To find the <code class="docutils literal notranslate"><span class="pre">x1dsum</span></code> file for these observations, we can use the <code class="docutils literal notranslate"><span class="pre">ASN_ID</span></code> keyword from the <code class="docutils literal notranslate"><span class="pre">x1ds</span></code>.</p>
 <p>The date the file was written and the version of the software used for calibration are useful for finding datasets that are archived “statically” in MAST, meaning they are always excluded from re-calibration because doing so will crash the latest versions of the calibration pipeline. There are only a handful of statically archived datasets for COS and STIS. The reasons they need to be designated as such are usually due to detector or spacecraft issues that need very specialized processing, and this is not always captured in the quality comments. Therefore, we do not recommend using these datasets in co-adds.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">readheaders</span><span class="p">(</span><span class="n">prerejectedfiles</span><span class="p">,</span> <span class="n">datadir</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">readheaders</span><span class="p">(</span><span class="n">prerejectedfiles</span><span class="p">,</span> <span class="n">datadir</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    This function goes through a list of the pre-rejected files and prints the </span>
 <span class="sd">    x1d header information about data quality. Some of these quality comments </span>
@@ -1121,11 +1143,11 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p><a id = plots1></a></p>
 </section>
 <section id="plotting-constituent-and-co-added-spectra">
-<h2>1.3 Plotting Constituent and Co-added Spectra<a class="headerlink" href="#plotting-constituent-and-co-added-spectra" title="Permalink to this heading">#</a></h2>
+<h2>1.3 Plotting Constituent and Co-added Spectra<a class="headerlink" href="#plotting-constituent-and-co-added-spectra" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a function to bin the data so it will plot more clearly</span>
-<span class="k">def</span> <span class="nf">downsample_1d</span><span class="p">(</span><span class="n">myarr</span><span class="p">,</span> <span class="n">factor</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">downsample_1d</span><span class="p">(</span><span class="n">myarr</span><span class="p">,</span> <span class="n">factor</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Downsample a 1D array by averaging over *factor* pixels.</span>
 <span class="sd">    Crops right side if the shape is not a multiple of factor.</span>
@@ -1205,7 +1227,7 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p><a id = coadd1></a></p>
 </section>
 <section id="re-running-coadd">
-<h2>1.4 Re-running <code class="docutils literal notranslate"><span class="pre">coadd</span></code><a class="headerlink" href="#re-running-coadd" title="Permalink to this heading">#</a></h2>
+<h2>1.4 Re-running <code class="docutils literal notranslate"><span class="pre">coadd</span></code><a class="headerlink" href="#re-running-coadd" title="Link to this heading">#</a></h2>
 <p>Now that we know which data we want to use in the custom co-add, we must create a new directory with all the data from Visits 50 and 51. We will feed <code class="docutils literal notranslate"><span class="pre">coadd</span></code> the data from this new directory from its <code class="docutils literal notranslate"><span class="pre">wrapper</span></code> script. Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code> this way essentially skips the filtering that the MAST query applies, but <code class="docutils literal notranslate"><span class="pre">coadd</span></code> itself still has some internal data quality checks, as mentioned above, so we will need to turn those off. If there is data you still want <code class="docutils literal notranslate"><span class="pre">coadd</span></code> exclude that was filtered before, be sure to not put those in the data directory!</p>
 <p>The following cell is the call to <code class="docutils literal notranslate"><span class="pre">coadd</span></code> via its <code class="docutils literal notranslate"><span class="pre">wrapper</span></code>. The <code class="docutils literal notranslate"><span class="pre">-i</span></code> parameter is the input directory you just made. <code class="docutils literal notranslate"><span class="pre">-o</span></code> is the directory that will contain the newly created co-added products. The <code class="docutils literal notranslate"><span class="pre">-k</span></code> turns off the data quality filtering. There is more information about this in our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">Setup.ipynb</a> notebook.</p>
 <div class="cell docutils container">
@@ -1229,9 +1251,9 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p>To call <code class="docutils literal notranslate"><span class="pre">coadd</span></code>, we use the <code class="docutils literal notranslate"><span class="pre">!</span></code> to run from the command line. The directories here must be printed out in full - don’t use variable names:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture output
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> output
 
-!swrapper -i ./12715/newcoadddata -o ./12715/newcoadddata/products -k
+<span class="err">!</span><span class="n">swrapper</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="mi">12715</span><span class="o">/</span><span class="n">newcoadddata</span> <span class="o">-</span><span class="n">o</span> <span class="o">./</span><span class="mi">12715</span><span class="o">/</span><span class="n">newcoadddata</span><span class="o">/</span><span class="n">products</span> <span class="o">-</span><span class="n">k</span>
 </pre></div>
 </div>
 </div>
@@ -1245,7 +1267,7 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 </div>
 </div>
 <section id="replot-the-co-added-data">
-<h3>Replot the co-added data<a class="headerlink" href="#replot-the-co-added-data" title="Permalink to this heading">#</a></h3>
+<h3>Replot the co-added data<a class="headerlink" href="#replot-the-co-added-data" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clear the older plot</span>
@@ -1333,11 +1355,11 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="example-2-a-stis-dataset-with-postarg-offsets">
-<h1>Example 2: A STIS dataset with POSTARG offsets<a class="headerlink" href="#example-2-a-stis-dataset-with-postarg-offsets" title="Permalink to this heading">#</a></h1>
+<h1>Example 2: A STIS dataset with POSTARG offsets<a class="headerlink" href="#example-2-a-stis-dataset-with-postarg-offsets" title="Link to this heading">#</a></h1>
 <p><a id = data2></a></p>
 <section id="id1">
-<h2>2.1 Obtaining Data Products<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
-<p>For the next example, we will look at Program ID 16655, a STIS program that observed the star <a class="reference external" href="http://simbad.cds.unistra.fr/simbad/sim-basic?Ident=Betelgeuse&amp;submit=SIMBAD+search">Betelgeuse</a> with the <code class="docutils literal notranslate"><span class="pre">E230M</span></code> grating centered on the target and at <code class="docutils literal notranslate"><span class="pre">POSTARGs</span></code> <code class="docutils literal notranslate"><span class="pre">+/-0.25</span> <span class="pre">mas</span></code> and <code class="docutils literal notranslate"><span class="pre">+/-</span> <span class="pre">0.5</span> <span class="pre">mas</span></code>. Each visit in the programs contains the same spatial scan in the pattern <code class="docutils literal notranslate"><span class="pre">+0.5</span> <span class="pre">mas</span></code>, <code class="docutils literal notranslate"><span class="pre">-0.5</span> <span class="pre">mas</span></code>, <code class="docutils literal notranslate"><span class="pre">centered</span></code>, <code class="docutils literal notranslate"><span class="pre">+0.25</span> <span class="pre">mas</span></code>, <code class="docutils literal notranslate"><span class="pre">-0.25</span> <span class="pre">mas</span></code>. <code class="docutils literal notranslate"><span class="pre">coadd</span></code> will co-add the centered datasets in each visit, but will reject the other datasets with <code class="docutils literal notranslate"><span class="pre">POSTARGs</span></code>.</p>
+<h2>2.1 Obtaining Data Products<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>For the next example, we will look at Program ID 16655, a STIS program that observed the star <a class="reference external" href="http://simbad.cds.unistra.fr/simbad/sim-basic?Ident=Betelgeuse&amp;amp;submit=SIMBAD+search">Betelgeuse</a> with the <code class="docutils literal notranslate"><span class="pre">E230M</span></code> grating centered on the target and at <code class="docutils literal notranslate"><span class="pre">POSTARGs</span></code> <code class="docutils literal notranslate"><span class="pre">+/-0.25</span> <span class="pre">mas</span></code> and <code class="docutils literal notranslate"><span class="pre">+/-</span> <span class="pre">0.5</span> <span class="pre">mas</span></code>. Each visit in the programs contains the same spatial scan in the pattern <code class="docutils literal notranslate"><span class="pre">+0.5</span> <span class="pre">mas</span></code>, <code class="docutils literal notranslate"><span class="pre">-0.5</span> <span class="pre">mas</span></code>, <code class="docutils literal notranslate"><span class="pre">centered</span></code>, <code class="docutils literal notranslate"><span class="pre">+0.25</span> <span class="pre">mas</span></code>, <code class="docutils literal notranslate"><span class="pre">-0.25</span> <span class="pre">mas</span></code>. <code class="docutils literal notranslate"><span class="pre">coadd</span></code> will co-add the centered datasets in each visit, but will reject the other datasets with <code class="docutils literal notranslate"><span class="pre">POSTARGs</span></code>.</p>
 <p>We will again use <code class="docutils literal notranslate"><span class="pre">astroquery</span></code> to download the dataproducts for this program. We will create a folder for the <code class="docutils literal notranslate"><span class="pre">X1D</span></code> products, called <code class="docutils literal notranslate"><span class="pre">./16655</span></code>, and a subfolder called <code class="docutils literal notranslate"><span class="pre">products</span></code>, which will store the downloaded coadded data. The log file for this program is named <code class="docutils literal notranslate"><span class="pre">HASP_16655.out</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1434,7 +1456,7 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p><a id = logs2></a></p>
 </section>
 <section id="id2">
-<h2>2.2 Examining Output Logs and Headers<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<h2>2.2 Examining Output Logs and Headers<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <p>Let’s look at the log next.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1474,8 +1496,8 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p><a id = coadd1></a></p>
 </section>
 <section id="running-coadd">
-<h2>2.3 Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code><a class="headerlink" href="#running-coadd" title="Permalink to this heading">#</a></h2>
-<p>The structure of the program is such that each visit observed Betelgeuse at many <code class="docutils literal notranslate"><span class="pre">POSTARG</span></code> positions using the same gratings. The spatial scanning pattern is uniform, and so a user may wish to create co-adds of the spectra observed at each pointing position across all the visits. To co-add these, we can follow the same steps as in <span class="xref myst">Section 1.4</span>, but set up five different directories for each pointing position. We’ll create the directories:</p>
+<h2>2.3 Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code><a class="headerlink" href="#running-coadd" title="Link to this heading">#</a></h2>
+<p>The structure of the program is such that each visit observed Betelgeuse at many <code class="docutils literal notranslate"><span class="pre">POSTARG</span></code> positions using the same gratings. The spatial scanning pattern is uniform, and so a user may wish to create co-adds of the spectra observed at each pointing position across all the visits. To co-add these, we can follow the same steps as in <a class="reference internal" href="#coadd1"><span class="xref myst">Section 1.4</span></a>, but set up five different directories for each pointing position. We’ll create the directories:</p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Directory</p></th>
@@ -1537,13 +1559,13 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p>Run <code class="docutils literal notranslate"><span class="pre">coadd</span></code> for all the new directories:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture output
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> output
 
-!swrapper -i ./16655/newcoadddata_p-0.05 -o ./16655/newcoadddata_p-0.05/products -k -t -999
-!swrapper -i ./16655/newcoadddata_p-0.025 -o ./16655/newcoadddata_p-0.025/products -k -t -999
-!swrapper -i ./16655/newcoadddata_p0.0 -o ./16655/newcoadddata_p0.0/products -k -t -999
-!swrapper -i ./16655/newcoadddata_p0.025 -o ./16655/newcoadddata_p0.025/products -k -t -999
-!swrapper -i ./16655/newcoadddata_p0.05 -o ./16655/newcoadddata_p0.05/products -k -t -999
+<span class="err">!</span><span class="n">swrapper</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p</span><span class="o">-</span><span class="mf">0.05</span> <span class="o">-</span><span class="n">o</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p</span><span class="o">-</span><span class="mf">0.05</span><span class="o">/</span><span class="n">products</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="mi">999</span>
+<span class="err">!</span><span class="n">swrapper</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p</span><span class="o">-</span><span class="mf">0.025</span> <span class="o">-</span><span class="n">o</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p</span><span class="o">-</span><span class="mf">0.025</span><span class="o">/</span><span class="n">products</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="mi">999</span>
+<span class="err">!</span><span class="n">swrapper</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p0</span><span class="mf">.0</span> <span class="o">-</span><span class="n">o</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p0</span><span class="mf">.0</span><span class="o">/</span><span class="n">products</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="mi">999</span>
+<span class="err">!</span><span class="n">swrapper</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p0</span><span class="mf">.025</span> <span class="o">-</span><span class="n">o</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p0</span><span class="mf">.025</span><span class="o">/</span><span class="n">products</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="mi">999</span>
+<span class="err">!</span><span class="n">swrapper</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p0</span><span class="mf">.05</span> <span class="o">-</span><span class="n">o</span> <span class="o">./</span><span class="mi">16655</span><span class="o">/</span><span class="n">newcoadddata_p0</span><span class="mf">.05</span><span class="o">/</span><span class="n">products</span> <span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="mi">999</span>
 </pre></div>
 </div>
 </div>
@@ -1638,11 +1660,11 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="example-3-a-stis-dataset-with-flux-rejection">
-<h1>Example 3: A STIS dataset with flux rejection<a class="headerlink" href="#example-3-a-stis-dataset-with-flux-rejection" title="Permalink to this heading">#</a></h1>
+<h1>Example 3: A STIS dataset with flux rejection<a class="headerlink" href="#example-3-a-stis-dataset-with-flux-rejection" title="Link to this heading">#</a></h1>
 <p><a id = data3></a></p>
 <section id="id3">
-<h2>3.1 Obtaining Data Products<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
-<p>For the next example, we will at Program ID 16196, a COS and STIS program that observed <a class="reference external" href="https://simbad.cds.unistra.fr/simbad/sim-basic?Ident=mrk+817&amp;submit=SIMBAD+search">MRK-817</a>.</p>
+<h2>3.1 Obtaining Data Products<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>For the next example, we will at Program ID 16196, a COS and STIS program that observed <a class="reference external" href="https://simbad.cds.unistra.fr/simbad/sim-basic?Ident=mrk+817&amp;amp;submit=SIMBAD+search">MRK-817</a>.</p>
 <p>We will again use <code class="docutils literal notranslate"><span class="pre">astroquery</span></code> to download the dataproducts for this program. We will create a folder called <code class="docutils literal notranslate"><span class="pre">./16655</span></code> for the 1D extracted COS and STIS spectra (<code class="docutils literal notranslate"><span class="pre">x1ds</span></code> and <code class="docutils literal notranslate"><span class="pre">sx1s</span></code>) for all visits in this program, as well as the <code class="docutils literal notranslate"><span class="pre">x1dsums</span></code> for the COS data. We will also create a subfolder called <code class="docutils literal notranslate"><span class="pre">products</span></code>, which will store the downloaded coadded data. The log file for this program is named <code class="docutils literal notranslate"><span class="pre">HASP_16196.out</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1737,7 +1759,7 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p><a id = logs3></a></p>
 </section>
 <section id="examining-output-logs">
-<h2>3.2 Examining Output Logs<a class="headerlink" href="#examining-output-logs" title="Permalink to this heading">#</a></h2>
+<h2>3.2 Examining Output Logs<a class="headerlink" href="#examining-output-logs" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set up path to the coadd log file</span>
@@ -1776,8 +1798,8 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p><a id = coadd3></a></p>
 </section>
 <section id="id4">
-<h2>3.3 Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code><a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
-<p>Since we want to co-add everything again, just without the flux filtering, we don’t need to make a new data sub-directory. We should change the output directory name so that the original co-adds are not overwritten. We run <code class="docutils literal notranslate"><span class="pre">coadd</span></code> similarly to <span class="xref myst">Section 1.4</span>, but this time with just the <code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">-999</span></code> flag.</p>
+<h2>3.3 Running <code class="docutils literal notranslate"><span class="pre">coadd</span></code><a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<p>Since we want to co-add everything again, just without the flux filtering, we don’t need to make a new data sub-directory. We should change the output directory name so that the original co-adds are not overwritten. We run <code class="docutils literal notranslate"><span class="pre">coadd</span></code> similarly to <a class="reference internal" href="#coadd1"><span class="xref myst">Section 1.4</span></a>, but this time with just the <code class="docutils literal notranslate"><span class="pre">-t</span> <span class="pre">-999</span></code> flag.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set up the path to your data directory</span>
@@ -1792,9 +1814,9 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <p>And now we run <code class="docutils literal notranslate"><span class="pre">coadd</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>%%capture output
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%%capture</span> output
 
-!swrapper -i ./16196/ -o ./16196/products_nofluxfilter -t -999
+<span class="err">!</span><span class="n">swrapper</span> <span class="o">-</span><span class="n">i</span> <span class="o">./</span><span class="mi">16196</span><span class="o">/</span> <span class="o">-</span><span class="n">o</span> <span class="o">./</span><span class="mi">16196</span><span class="o">/</span><span class="n">products_nofluxfilter</span> <span class="o">-</span><span class="n">t</span> <span class="o">-</span><span class="mi">999</span>
 </pre></div>
 </div>
 </div>
@@ -1859,18 +1881,18 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="happy-co-adding">
-<h1>Happy co-adding!<a class="headerlink" href="#happy-co-adding" title="Permalink to this heading">#</a></h1>
+<h1>Happy co-adding!<a class="headerlink" href="#happy-co-adding" title="Link to this heading">#</a></h1>
 <section id="there-are-more-tutorial-notebooks-for-custom-co-addition-cases-in-this-repo-check-them-out">
-<h2>There are more tutorial notebooks for custom co-addition cases in <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">this repo</a>, check them out!<a class="headerlink" href="#there-are-more-tutorial-notebooks-for-custom-co-addition-cases-in-this-repo-check-them-out" title="Permalink to this heading">#</a></h2>
+<h2>There are more tutorial notebooks for custom co-addition cases in <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">this repo</a>, check them out!<a class="headerlink" href="#there-are-more-tutorial-notebooks-for-custom-co-addition-cases-in-this-repo-check-them-out" title="Link to this heading">#</a></h2>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><strong>Authors:</strong> Elaine Frazer (efrazer&#64;stsci.edu), Sierra Gomez (sigomez&#64;stsci.edu), Debopam Som (dsom&#64;stsci.edu), Anna Payne (apayne&#64;stsci.edu)</p>
 <p><strong>Updated on:</strong> 10/20/2024</p>
 <p><em>This tutorial was generated to be in compliance with the <a class="reference external" href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a class="reference external" href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em></p>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, or <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, for published research, please cite the authors. Follow these links for more information about citations:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.astropy.org/en/stable/index.html">Citing <code class="docutils literal notranslate"><span class="pre">astropy</span></code></a></p></li>
@@ -1879,7 +1901,7 @@ We will use <code class="docutils literal notranslate"><span class="pre">astroqu
 <li><p><a class="reference external" href="https://numpy.org/citing-numpy/">Citing <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></p></li>
 </ul>
 <hr>
-<p><span class="xref myst">Top of Page</span>
+<p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a>
 <a class="reference internal" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a></p>
 </section>
 </section>
@@ -2011,7 +2033,7 @@ By STScI
 
   <p class="copyright">
     
-      © Copyright 2022-2024.
+      © Copyright 2022-2025.
       <br/>
     
   </p>

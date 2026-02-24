@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>WFC3/UVIS Filter Transformations with stsynphot &#8212; HST Notebooks</title>
   
@@ -29,40 +28,49 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2XDY0S4S5Q"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/WFC3/filter_transformations/filter_transformations';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -164,7 +172,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -267,6 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">HASP</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/README.html">HASP Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/Setup/Setup.html">Installing the Hubble Advanced Spectral Products Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/CoaddTutorial/CoaddTutorial.html">Inputting User Data using the Hubble Advanced Spectral Products Script</a></li>
 
@@ -279,8 +299,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/WavelengthAdjustment/WavelengthAdjustment.html">Wavelength Adjustments for Running the Hubble Advanced Spectral Products (HASP) Script</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../../HASP/COSLifetimePositions/COSLifetimePositions.html">Combining COS Data from Multiple Lifetime Positions and Central Wavelengths</a></li>
-
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HSLA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/README.html">HSLA Notebooks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">NICMOS</span></p>
 <ul class="nav bd-sidenav">
@@ -364,9 +386,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -391,14 +413,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/WFC3/filter_transformations/filter_transformations.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -556,9 +578,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -608,7 +630,7 @@ document.write(`
                   
   <p><a id="title"></a></p>
 <section class="tex2jax_ignore mathjax_ignore" id="wfc3-uvis-filter-transformations-with-stsynphot">
-<h1>WFC3/UVIS Filter Transformations with stsynphot<a class="headerlink" href="#wfc3-uvis-filter-transformations-with-stsynphot" title="Permalink to this heading">#</a></h1>
+<h1>WFC3/UVIS Filter Transformations with stsynphot<a class="headerlink" href="#wfc3-uvis-filter-transformations-with-stsynphot" title="Link to this heading">#</a></h1>
 <hr>
 ## Learning Goals
 <p>By the end of this tutorial, you will:</p>
@@ -618,23 +640,23 @@ document.write(`
 <li><p>Plot bandpasses to investigate various throughputs.</p></li>
 </ul>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Introduction</span> <br>
-<span class="xref myst">1. Imports</span> <br>
-<span class="xref myst">2. Select filters for the transformation</span> <br>
-<span class="xref myst">3. Define a spectrum</span> <br>
-<span class="xref myst">4. Select UVIS chips</span> <br>
-<span class="xref myst">5. Select magnitude systems</span> <br>
-<span class="xref myst">6. Generate outputs</span> <br>
-<span class="xref myst">7. Plot bandpasses</span> <br>
-<span class="xref myst">8. Conclusions</span> <br>
-<span class="xref myst">Additional Resources</span> <br>
-<span class="xref myst">About the Notebook</span> <br>
-<span class="xref myst">Citations</span> <br></p>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#intro"><span class="xref myst">Introduction</span></a> <br>
+<a class="reference internal" href="#imports"><span class="xref myst">1. Imports</span></a> <br>
+<a class="reference internal" href="#select"><span class="xref myst">2. Select filters for the transformation</span></a> <br>
+<a class="reference internal" href="#spec"><span class="xref myst">3. Define a spectrum</span></a> <br>
+<a class="reference internal" href="#chips"><span class="xref myst">4. Select UVIS chips</span></a> <br>
+<a class="reference internal" href="#system"><span class="xref myst">5. Select magnitude systems</span></a> <br>
+<a class="reference internal" href="#output"><span class="xref myst">6. Generate outputs</span></a> <br>
+<a class="reference internal" href="#band"><span class="xref myst">7. Plot bandpasses</span></a> <br>
+<a class="reference internal" href="#conclusion"><span class="xref myst">8. Conclusions</span></a> <br>
+<a class="reference internal" href="#resources"><span class="xref myst">Additional Resources</span></a> <br>
+<a class="reference internal" href="#about"><span class="xref myst">About the Notebook</span></a> <br>
+<a class="reference internal" href="#cite"><span class="xref myst">Citations</span></a> <br></p>
 <p><a id="intro"></a></p>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>This notebook computes color terms between selected WFC3/UVIS filters and non-HST filters, such as Johnson-Cousins, for a user-defined reference spectrum. The terms as given are the difference between the magnitude of the spectrum in the selected non-HST filter and the corresponding UVIS filter.</p>
 <p>This tool reproduces the methods described in section 4 of <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/wfc3/documentation/instrument-science-reports-isrs/_documents/2014/WFC3-2014-16.pdf">WFC3 ISR 2014-16</a>, but will automatically use the latest available spectra and throughput tables.</p>
 <p><code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> requires access to data distributed by the <a class="reference external" href="https://hst-crds.stsci.edu/">Calibration Data Reference System</a> (CRDS) in order to operate. Both packages look for an environment variable called <code class="docutils literal notranslate"><span class="pre">PYSYN_CDBS</span></code> to find the directory containing these data.</p>
@@ -643,7 +665,7 @@ document.write(`
 <p><a id="imports"></a></p>
 </section>
 <section id="imports">
-<h2>1. Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h2>
+<h2>1. Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h2>
 <p>This notebook assumes you have created the virtual environment in <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/blob/main/notebooks/WFC3/README.md">WFC3 notebooks’</a> installation instructions.</p>
 <p>We import:</p>
 <ul class="simple">
@@ -658,15 +680,15 @@ document.write(`
 <p>Additionally, we will need to set the <code class="docutils literal notranslate"><span class="pre">PYSYN_CDBS</span></code> environment variable <em>before</em> importing stsynphot. We will also create a Vega spectrum using synphot’s inbuilt <code class="docutils literal notranslate"><span class="pre">from_vega()</span></code> method, as the latter package will supercede this method’s functionality and require a downloaded copy of the latest Vega spectrum to be provided.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">tarfile</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">astropy.units</span> <span class="k">as</span> <span class="nn">u</span>
-<span class="kn">import</span> <span class="nn">synphot.units</span> <span class="k">as</span> <span class="nn">su</span>
-<span class="kn">import</span> <span class="nn">synphot</span> <span class="k">as</span> <span class="nn">syn</span>
-<span class="kn">from</span> <span class="nn">synphot</span> <span class="kn">import</span> <span class="n">Observation</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">tarfile</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">astropy.units</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">u</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">synphot.units</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">su</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">synphot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">syn</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">synphot</span><span class="w"> </span><span class="kn">import</span> <span class="n">Observation</span>
 
 <span class="o">%</span><span class="k">matplotlib</span> inline
 
@@ -706,7 +728,7 @@ document.write(`
 <p>Now, after having set up <code class="docutils literal notranslate"><span class="pre">PYSYN_CDBS</span></code>, we import stsynphot. A warning regarding the Vega spectrum is expected here.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">stsynphot</span> <span class="k">as</span> <span class="nn">stsyn</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">stsynphot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">stsyn</span>
 </pre></div>
 </div>
 </div>
@@ -714,7 +736,7 @@ document.write(`
 <p><a id="select"></a></p>
 </section>
 <section id="select-filters-for-the-transformation">
-<h2>2. Select filters for the transformation<a class="headerlink" href="#select-filters-for-the-transformation" title="Permalink to this heading">#</a></h2>
+<h2>2. Select filters for the transformation<a class="headerlink" href="#select-filters-for-the-transformation" title="Link to this heading">#</a></h2>
 <p>Define the filters to use for computing the transformation. One filter should be a UVIS filter, and the other a non-HST filter such as a Johnson-Cousins filter.</p>
 <p><strong>Filter names should be input as a list of tupled strings. Each tuple represents a pair of filters to convert between, and should contain the non-HST filter as the first element, and the UVIS filter as the second.</strong></p>
 <p>For non-HST filters, the filter system be included in the string, separated from the filter name by a comma (e.g. <code class="docutils literal notranslate"><span class="pre">'johnson,</span> <span class="pre">v'</span></code> or <code class="docutils literal notranslate"><span class="pre">'sdss,</span> <span class="pre">g'</span></code>). The available non-HST filters are listed here:</p>
@@ -781,7 +803,7 @@ document.write(`
 <p><a id="spec"></a></p>
 </section>
 <section id="define-a-spectrum">
-<h2>3. Define a spectrum<a class="headerlink" href="#define-a-spectrum" title="Permalink to this heading">#</a></h2>
+<h2>3. Define a spectrum<a class="headerlink" href="#define-a-spectrum" title="Link to this heading">#</a></h2>
 <p>Define a spectrum to get color terms for. Some common options are embedded below. A wide array of reference spectra are available for download from spectral atlases located <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/reference-data-for-calibration-and-tools/astronomical-catalogs">here</a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Blackbody (5000 K)</span>
 <span class="n">blackbody_temperature</span> <span class="o">=</span> <span class="mi">5000</span>
@@ -813,7 +835,7 @@ document.write(`
 <p><a id="chips"></a></p>
 </section>
 <section id="select-uvis-chips">
-<h2>4. Select UVIS chips<a class="headerlink" href="#select-uvis-chips" title="Permalink to this heading">#</a></h2>
+<h2>4. Select UVIS chips<a class="headerlink" href="#select-uvis-chips" title="Link to this heading">#</a></h2>
 <p>Quantum efficiency differences between the two UVIS chips mean that you must specify which chips to use for computing color terms. Simply set the chip you would like to use to <code class="docutils literal notranslate"><span class="pre">True</span></code> and the other to <code class="docutils literal notranslate"><span class="pre">False</span></code>, or set both to <code class="docutils literal notranslate"><span class="pre">True</span></code> if you would like coefficients for both.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -827,7 +849,7 @@ document.write(`
 <p><a id="system"></a></p>
 </section>
 <section id="select-magnitude-systems">
-<h2>5. Select magnitude systems<a class="headerlink" href="#select-magnitude-systems" title="Permalink to this heading">#</a></h2>
+<h2>5. Select magnitude systems<a class="headerlink" href="#select-magnitude-systems" title="Link to this heading">#</a></h2>
 <p>Select which magnitude systems you would like color terms to be provided for. Set those you would like to <code class="docutils literal notranslate"><span class="pre">True</span></code> and others to <code class="docutils literal notranslate"><span class="pre">False</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -844,7 +866,7 @@ document.write(`
 <p><a id="output"></a></p>
 </section>
 <section id="generate-outputs">
-<h2>6. Generate outputs<a class="headerlink" href="#generate-outputs" title="Permalink to this heading">#</a></h2>
+<h2>6. Generate outputs<a class="headerlink" href="#generate-outputs" title="Link to this heading">#</a></h2>
 <p>Generate a data frame containing the color terms for the inputs you have specified.</p>
 <p>First, let’s define the column names for the output table, and a list to fill with table rows.</p>
 <div class="cell docutils container">
@@ -928,7 +950,7 @@ document.write(`
 <p><a id="band"></a></p>
 </section>
 <section id="plot-bandpasses">
-<h2>7. Plot bandpasses<a class="headerlink" href="#plot-bandpasses" title="Permalink to this heading">#</a></h2>
+<h2>7. Plot bandpasses<a class="headerlink" href="#plot-bandpasses" title="Link to this heading">#</a></h2>
 <p>It can be nice to see your selected bandpass pairs plotted with each other. The cell below will generate a figure with subplots for each filter pair specified above, as well as the relevant portion of the spectrum you’ve defined, all normalized to fit on the same axes.</p>
 <p><strong>Note:</strong> For the purposes of these plots, the non-HST bandpass and spectrum have been scaled to the amplitude of the HST bandpass, which reflects the actual total system throughput as a function of wavelength.</p>
 <div class="cell docutils container">
@@ -969,7 +991,7 @@ document.write(`
 <p><a id="conclusion"></a></p>
 </section>
 <section id="conclusions">
-<h2>8. Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h2>
+<h2>8. Conclusions<a class="headerlink" href="#conclusions" title="Link to this heading">#</a></h2>
 <p>Thank you for walking through this notebook. Now using WFC3 data, you should be more familiar with:</p>
 <ul class="simple">
 <li><p>Generating synthetic observations using <code class="docutils literal notranslate"><span class="pre">synphot</span></code> and <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code>.</p></li>
@@ -977,12 +999,12 @@ document.write(`
 <li><p>Ploting bandpasses to investigate various throughputs.</p></li>
 </ul>
 <section id="congratulations-you-have-completed-the-notebook">
-<h3>Congratulations, you have completed the notebook!<a class="headerlink" href="#congratulations-you-have-completed-the-notebook" title="Permalink to this heading">#</a></h3>
+<h3>Congratulations, you have completed the notebook!<a class="headerlink" href="#congratulations-you-have-completed-the-notebook" title="Link to this heading">#</a></h3>
 <p><a id="resources"></a></p>
 </section>
 </section>
 <section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h2>
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h2>
 <p>Below are some additional resources that may be helpful. Please send any questions through the <a class="reference external" href="https://stsci.service-now.com/hst">HST Helpdesk</a>.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.stsci.edu/hst/instrumentation/wfc3">WFC3 Website</a></p></li>
@@ -996,13 +1018,13 @@ document.write(`
 <p><a id="about"></a></p>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><strong>Authors:</strong> Aidan Pidgeon, Jennifer Mack; WFC3 Instrument Team</p>
 <p><strong>Updated on:</strong> 2021-09-13</p>
 <p><a id="cite"></a></p>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">synphot</span></code>, or <code class="docutils literal notranslate"><span class="pre">stsynphot</span></code> for published research, please cite the
 authors. Follow these links for more information about citing the libraries below:</p>
 <ul class="simple">
@@ -1120,7 +1142,7 @@ By STScI
 
   <p class="copyright">
     
-      © Copyright 2022-2024.
+      © Copyright 2022-2025.
       <br/>
     
   </p>

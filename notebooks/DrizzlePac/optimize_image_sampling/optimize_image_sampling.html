@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Optimizing the Image Sampling &#8212; HST Notebooks</title>
   
@@ -29,40 +28,49 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2XDY0S4S5Q"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -164,7 +172,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -267,6 +286,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">HASP</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HASP/README.html">HASP Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/Setup/Setup.html">Installing the Hubble Advanced Spectral Products Script</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/CoaddTutorial/CoaddTutorial.html">Inputting User Data using the Hubble Advanced Spectral Products Script</a></li>
 
@@ -279,8 +299,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l1"><a class="reference internal" href="../../HASP/WavelengthAdjustment/WavelengthAdjustment.html">Wavelength Adjustments for Running the Hubble Advanced Spectral Products (HASP) Script</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../../HASP/COSLifetimePositions/COSLifetimePositions.html">Combining COS Data from Multiple Lifetime Positions and Central Wavelengths</a></li>
-
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HSLA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/README.html">HSLA Notebooks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">NICMOS</span></p>
 <ul class="nav bd-sidenav">
@@ -364,9 +386,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -391,14 +413,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/DrizzlePac/optimize_image_sampling/optimize_image_sampling.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -556,9 +578,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -609,31 +631,31 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="optimizing-the-image-sampling">
-<h1>Optimizing the Image Sampling<a class="headerlink" href="#optimizing-the-image-sampling" title="Permalink to this heading">#</a></h1>
+<h1>Optimizing the Image Sampling<a class="headerlink" href="#optimizing-the-image-sampling" title="Link to this heading">#</a></h1>
 <p><a id="top"></a></p>
 <div class="alert alert-block alert-warning" style="color:black" > <b> This notebook requires creating and activating a virtual environment using the requirements file in this notebook's repository. Please also review the README file before using the notebook.</b> <br> </div>
 <a id="toc"></a>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Introduction</span> <br>
-<span class="xref myst">Import Packages</span><br></p>
-<p><span class="xref myst">1. Retrieve Observations</span> <br>
-<span class="xref myst">2. Check image header data</span> <br>
-    <span class="xref myst">2.1 Inspect useful keywords</span><br>
-    <span class="xref myst">2.2 Inspect the dither pattern</span><br>
-    <span class="xref myst">2.3 Inspect the MAST alignment</span><br>
-    <span class="xref myst">2.4 Reset the WCS solution</span><br>
-<span class="xref myst">3. Drizzling</span> <br>
-<span class="xref myst">4. Inspecting the Results</span> <br>
-<span class="xref myst">5. Optimizing the final_pixfrac parameter</span> <br>
-<span class="xref myst">6. Final Thoughts</span> <br></p>
-<p><span class="xref myst">About this notebook</span><br>
-<span class="xref myst">Additional resources</span><br></p>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#intro"><span class="xref myst">Introduction</span></a> <br>
+<a class="reference internal" href="#imports"><span class="xref myst">Import Packages</span></a><br></p>
+<p><a class="reference internal" href="#retrieve"><span class="xref myst">1. Retrieve Observations</span></a> <br>
+<a class="reference internal" href="#inspection"><span class="xref myst">2. Check image header data</span></a> <br>
+    <a class="reference internal" href="#inspect_keywords"><span class="xref myst">2.1 Inspect useful keywords</span></a><br>
+    <a class="reference internal" href="#inspect_dither"><span class="xref myst">2.2 Inspect the dither pattern</span></a><br>
+    <a class="reference internal" href="#inspect_wcs"><span class="xref myst">2.3 Inspect the MAST alignment</span></a><br>
+    <a class="reference internal" href="#reset_wcs"><span class="xref myst">2.4 Reset the WCS solution</span></a><br>
+<a class="reference internal" href="#drizzle"><span class="xref myst">3. Drizzling</span></a> <br>
+<a class="reference internal" href="#results"><span class="xref myst">4. Inspecting the Results</span></a> <br>
+<a class="reference internal" href="#pixfrac"><span class="xref myst">5. Optimizing the final_pixfrac parameter</span></a> <br>
+<a class="reference internal" href="#final"><span class="xref myst">6. Final Thoughts</span></a> <br></p>
+<p><a class="reference internal" href="#about"><span class="xref myst">About this notebook</span></a><br>
+<a class="reference internal" href="#add"><span class="xref myst">Additional resources</span></a><br></p>
 <p><a id="intro"></a></p>
 </section>
 <section id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>This example was written to help users better understand the subtleties in improving image sampling for dithered data. One of the powers of the <em>drizzling</em> algorithm is that, given properly dithered images, it can restore much of the information lost due to undersampled images (<a class="reference external" href="http://iopscience.iop.org/article/10.1086/338393/pdf">Fruchter and Hook, 2002</a>).</p>
 <p>This work is based on <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/acs/documentation/instrument-science-reports-isrs/_documents/isr1501.pdf">ISR ACS 2015-01</a>, which contains a more detailed discussion than presented here.</p>
 <p>In practice, this requires the use of <code class="docutils literal notranslate"><span class="pre">Astrodrizzle</span></code> task within the <code class="docutils literal notranslate"><span class="pre">Drizzlepac</span></code> package. This example will:</p>
@@ -644,8 +666,8 @@ document.write(`
 <p><a id="imports"></a></p>
 </section>
 <section id="import-packages">
-<h2>Import packages<a class="headerlink" href="#import-packages" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>Import packages<a class="headerlink" href="#import-packages" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>The following Python packages are required to run the Jupyter Notebook:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.python.org/3/library/os.html"><strong>os</strong></a> - change and make directories</p></li>
@@ -660,23 +682,23 @@ document.write(`
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">glob</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
 
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">clear_output</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">collections</span><span class="w"> </span><span class="kn">import</span> <span class="n">defaultdict</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">IPython.display</span><span class="w"> </span><span class="kn">import</span> <span class="n">clear_output</span>
 
-<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
-<span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Observations</span>
-<span class="kn">from</span> <span class="nn">astropy.visualization</span> <span class="kn">import</span> <span class="n">LogStretch</span><span class="p">,</span> <span class="n">ImageNormalize</span><span class="p">,</span> <span class="n">LinearStretch</span>
-<span class="kn">from</span> <span class="nn">astropy</span> <span class="kn">import</span> <span class="n">wcs</span>
-<span class="kn">from</span> <span class="nn">astropy.table</span> <span class="kn">import</span> <span class="n">Table</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astropy.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">fits</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astroquery.mast</span><span class="w"> </span><span class="kn">import</span> <span class="n">Observations</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astropy.visualization</span><span class="w"> </span><span class="kn">import</span> <span class="n">LogStretch</span><span class="p">,</span> <span class="n">ImageNormalize</span><span class="p">,</span> <span class="n">LinearStretch</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astropy</span><span class="w"> </span><span class="kn">import</span> <span class="n">wcs</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astropy.table</span><span class="w"> </span><span class="kn">import</span> <span class="n">Table</span>
 
-<span class="kn">from</span> <span class="nn">stwcs.wcsutil</span> <span class="kn">import</span> <span class="n">headerlet</span>
-<span class="kn">import</span> <span class="nn">drizzlepac</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">stwcs.wcsutil</span><span class="w"> </span><span class="kn">import</span> <span class="n">headerlet</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">drizzlepac</span>
 
 <span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = &#39;retina&#39; # Greatly improves the resolution of figures rendered in notebooks.
@@ -694,8 +716,8 @@ document.write(`
 <p><a id="download"></a></p>
 </section>
 <section id="download-the-observations-with-astroquery">
-<h2>1. Download the Observations with <code class="docutils literal notranslate"><span class="pre">astroquery</span></code><a class="headerlink" href="#download-the-observations-with-astroquery" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>1. Download the Observations with <code class="docutils literal notranslate"><span class="pre">astroquery</span></code><a class="headerlink" href="#download-the-observations-with-astroquery" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <hr>
 MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/latest/mast/mast_obsquery.html#observation-criteria-queries"> `query_criteria`</a>, where we specify: <br>
 <p>    –&gt; obs_id, proposal_id, and filters</p>
@@ -741,12 +763,12 @@ MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/lat
 <p><a id="inspection"></a></p>
 </section>
 <section id="check-image-header-data">
-<h2>2. Check image header data<a class="headerlink" href="#check-image-header-data" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>2. Check image header data<a class="headerlink" href="#check-image-header-data" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>Here we will look at important keywords in the image headers to summarize the observation strategy.</p>
 <p><a id="inspect_keywords"></a></p>
 <section id="inspect-useful-keywords">
-<h3>2.1 Inspect useful keywords<a class="headerlink" href="#inspect-useful-keywords" title="Permalink to this heading">#</a></h3>
+<h3>2.1 Inspect useful keywords<a class="headerlink" href="#inspect-useful-keywords" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">flt_files</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;*fl?.fits&#39;</span><span class="p">))</span>
@@ -778,7 +800,7 @@ MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/lat
 <p><a id="inspect_dither"></a></p>
 </section>
 <section id="inspect-the-dither-pattern">
-<h3>2.2 Inspect the dither pattern<a class="headerlink" href="#inspect-the-dither-pattern" title="Permalink to this heading">#</a></h3>
+<h3>2.2 Inspect the dither pattern<a class="headerlink" href="#inspect-the-dither-pattern" title="Link to this heading">#</a></h3>
 <p>For the <em>drizzle</em> algorithm to work optimally, observations need to be dithered so that the PSF is appropriately sampled. The code below creates plots to show the dithering of each of the images in the association. The plot on the left shows how the images were dithered on the sky (the POSTARG). The plot on the right shows how the offsets translate to pixel phase (e.g. subpixel position).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -814,7 +836,7 @@ MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/lat
 <p><a id="inspect_wcs"></a></p>
 </section>
 <section id="inspect-the-mast-alignment">
-<h3>2.3 Inspect the MAST alignment<a class="headerlink" href="#inspect-the-mast-alignment" title="Permalink to this heading">#</a></h3>
+<h3>2.3 Inspect the MAST alignment<a class="headerlink" href="#inspect-the-mast-alignment" title="Link to this heading">#</a></h3>
 <p>Check the active WCS solution in the FITS image header. If the image is aligned to a catalog, list the number of matches and the fit RMS in milli-arcseconds and in pixels.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -866,7 +888,7 @@ MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/lat
 <p><a id="reset_wcs"></a></p>
 </section>
 <section id="reset-the-wcs-solution">
-<h3>2.4 Reset the WCS solution<a class="headerlink" href="#reset-the-wcs-solution" title="Permalink to this heading">#</a></h3>
+<h3>2.4 Reset the WCS solution<a class="headerlink" href="#reset-the-wcs-solution" title="Link to this heading">#</a></h3>
 <p>Next, we find the index of the WCS solution we want to use, and then apply that solution to each of the science images. Because the program was designed to have precise dithers, we reset the WCS to the “a priori” (distortion-only) solution to preserve relative alignment and get the sharpest PSFs when drizzling the images together.</p>
 <p>In this example, the “a priori” solution is named <strong>IDC_w3m18525i-GSC240</strong>, in which the coordinates of the guide stars were corrected to the coordinates reported in GAIA DR1, with no additional catalog fitting.</p>
 <p>Here we first grab the index of list element with value ‘IDC_w3m18525i-GSC240’. The index in this list + 1 is the same as the EXTVER of the corresponding HDRLET. We need to add 1 because lists are 0-indexed, while EXTVER’s are 1 indexed.</p>
@@ -886,8 +908,8 @@ MAST queries may be done using <a href="https://astroquery.readthedocs.io/en/lat
 </section>
 </section>
 <section id="drizzling">
-<h2>3. Drizzling<a class="headerlink" href="#drizzling" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>3. Drizzling<a class="headerlink" href="#drizzling" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>Before drizzling can be performed, a plate scale for the output image should be chosen. This will usually be dictated by the science needs. In theory, critical sampling of a PSF occurs with 2.355 pixels. The FWHM of the WFC3/IR detector at 1600 nm is ~0.151” (Table 7.5 of <a class="reference external" href="https://hst-docs.stsci.edu/wfc3ihb/chapter-7-ir-imaging-with-wfc3/7-6-ir-optical-performance">WFC Instrument Handbook</a>).</p>
 <p><b>Using these values, we select a plate scale of 0.065”/pix for the drizzled output frame, approximately half of the native plate scale (0.1283”/pix).</p>
 <p>The mechanism by which the <em>drizzle</em> algorithm improves sampling in the output image is by shrinking the input pixels before adding them to the output pixel grid (see Figure 2 in <a class="reference external" href="http://iopscience.iop.org/article/10.1086/338393/pdf">Fruchter and Hook (2002)</a>). In practice this process is controlled in the <code class="docutils literal notranslate"><span class="pre">AstroDrizzle</span></code> package by adjusting the <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> parameter, which is the fractional size of the pixel to be used.
@@ -905,7 +927,7 @@ Below <code class="docutils literal notranslate"><span class="pre">AstroDrizzle<
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_vals_from_mdriztab</span><span class="p">(</span><span class="n">input_images</span><span class="p">,</span> <span class="n">kw_list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;driz_sep_bits&#39;</span><span class="p">,</span> 
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">get_vals_from_mdriztab</span><span class="p">(</span><span class="n">input_images</span><span class="p">,</span> <span class="n">kw_list</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;driz_sep_bits&#39;</span><span class="p">,</span> 
                                                   <span class="s1">&#39;combine_type&#39;</span><span class="p">,</span> 
                                                   <span class="s1">&#39;driz_cr_snr&#39;</span><span class="p">,</span> 
                                                   <span class="s1">&#39;driz_cr_scale&#39;</span><span class="p">,</span> 
@@ -965,8 +987,8 @@ Below <code class="docutils literal notranslate"><span class="pre">AstroDrizzle<
 <p><a id="results"></a></p>
 </section>
 <section id="inspecting-the-results">
-<h2>4. Inspecting the Results<a class="headerlink" href="#inspecting-the-results" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>4. Inspecting the Results<a class="headerlink" href="#inspecting-the-results" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>The drizzled science and weight images produced from the first call to AstroDrizzle with no optimization of the plate scale and pixfrac are plotted below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1016,8 +1038,8 @@ Below <code class="docutils literal notranslate"><span class="pre">AstroDrizzle<
 <p><a id="pixfrac"></a></p>
 </section>
 <section id="optimizing-the-final-pixfrac-parameter">
-<h2>5. Optimizing the <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> parameter<a class="headerlink" href="#optimizing-the-final-pixfrac-parameter" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>5. Optimizing the <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> parameter<a class="headerlink" href="#optimizing-the-final-pixfrac-parameter" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>While the optimized <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> in the example above was chosen from experience with using a four-point dither, the value that should be used is not known <em>a priori</em>. The value could be different depending on several factors. For example, if the number of images is greater than four, the value used for <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> could be smaller since more images are available to fill in holes in the output grid. On the other hand, it is possible that no dithering was used during the observations. In that case, <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> should be left at 1.0, since shrinking the size of the drop could be detrimental.</p>
 <p>Below, a series of experiments will be run to determine the best <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> value for the selected output plate scale, by varying pixfrac in steps of 0.1 over a range of values from 0.1 to 1.0.</p>
 <div class="alert alert-block alert-warning" style="color:black" >  This cell may take a several minutes to execute. </div><div class="cell docutils container">
@@ -1126,13 +1148,13 @@ Below <code class="docutils literal notranslate"><span class="pre">AstroDrizzle<
 <p><a id="final"></a></p>
 </section>
 <section id="final-thoughts">
-<h2>6. Final thoughts<a class="headerlink" href="#final-thoughts" title="Permalink to this heading">#</a></h2>
-<p><span class="xref myst">Table of Contents</span></p>
+<h2>6. Final thoughts<a class="headerlink" href="#final-thoughts" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="#toc"><span class="xref myst">Table of Contents</span></a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> value has to be small enough to avoid degrading the combined output image, but large enough that when all images are “dropped” onto the final frame, coverage of the output frame is fairly uniform. In general, <code class="docutils literal notranslate"><span class="pre">final_pixfrac</span></code> should be slightly larger than the final output scale to allow some “spillover” to adjacent pixels. This will help avoid “holes” in the final product when a given pixel has been flagged as “bad” in several frames.  Optimizing the final drizzle parameters is a balance between the benefits of improving the image resolution and PSFs at the expense of increasing noise in the background.</p>
 <p><a id="about"></a></p>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Created: 12 Dec 2018;     R. Avila
 Updated: 30 Dec 2024;     R. Avila &amp; J. Mack
 </pre></div>
@@ -1141,7 +1163,7 @@ Updated: 30 Dec 2024;     R. Avila &amp; J. Mack
 <p><a id="add"></a></p>
 </section>
 <section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Permalink to this heading">#</a></h2>
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">#</a></h2>
 <p>Below are some additional resources that may be helpful. Please send any questions through the <a class="reference external" href="https://stsci.service-now.com/hst">HST Help Desk</a>.</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.stsci.edu/hst/instrumentation/wfc3">WFC3 Website</a></p></li>
@@ -1154,7 +1176,7 @@ Updated: 30 Dec 2024;     R. Avila &amp; J. Mack
 <p><a id="cite"></a></p>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use Python packages such as <code class="docutils literal notranslate"><span class="pre">astropy</span></code>, <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, <code class="docutils literal notranslate"><span class="pre">drizzlepac</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, or <code class="docutils literal notranslate"><span class="pre">numpy</span></code> for published research, please cite the authors.</p>
 <p>Follow these links for more information about citing various packages:</p>
 <ul class="simple">
@@ -1165,7 +1187,7 @@ Updated: 30 Dec 2024;     R. Avila &amp; J. Mack
 <li><p><a class="reference external" href="https://numpy.org/citing-numpy/">Citing <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></p></li>
 </ul>
 <hr>
-<p><span class="xref myst">Top of Page</span></p>
+<p><a class="reference internal" href="#top"><span class="xref myst">Top of Page</span></a></p>
 </section>
 </section>
 
@@ -1275,7 +1297,7 @@ By STScI
 
   <p class="copyright">
     
-      © Copyright 2022-2024.
+      © Copyright 2022-2025.
       <br/>
     
   </p>

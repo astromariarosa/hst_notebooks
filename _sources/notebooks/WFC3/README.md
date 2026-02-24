@@ -1,3 +1,5 @@
+![STScI Logo](../../_static/stsci_header.png)
+
 # WFC3 Notebooks
 
 WFC3 Notebooks is the primary repository for analyzing data from the 
@@ -41,7 +43,7 @@ for more information on instrumentation, data, calibration, and software.
 
 ## Before Running a Notebook
 
-Before running these examples you **must** follow the general instructions on creating an environment that can run the notebooks, shown in STScI HST Notebook Repository HQ page under [Installation Instructions](https://spacetelescope.github.io/hst_notebooks/index.html).
+Before running these examples, you **must** follow the general instructions on creating an environment that can run the notebooks, shown in STScI HST Notebook Repository HQ page under [**Installation Instructions**](https://spacetelescope.github.io/hst_notebooks/index.html).
 
 ## Contributing
 

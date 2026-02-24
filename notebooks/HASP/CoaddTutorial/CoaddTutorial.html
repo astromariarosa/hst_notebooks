@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="" >
+<html lang="en" data-content_root="../../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Inputting User Data using the Hubble Advanced Spectral Products Script &#8212; HST Notebooks</title>
   
@@ -29,40 +28,49 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/table.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/table.css?v=cd6c26fb" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
 <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
   <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
-    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-    <script src="../../../_static/jquery.js"></script>
-    <script src="../../../_static/underscore.js"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../../_static/doctools.js"></script>
-    <script src="../../../_static/clipboard.min.js"></script>
-    <script src="../../../_static/copybutton.js"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../../_static/togglebutton.js"></script>
+    <script src="../../../_static/togglebutton.js?v=1ae7504c"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-2XDY0S4S5Q"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-2XDY0S4S5Q');
+            </script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/HASP/CoaddTutorial/CoaddTutorial';</script>
@@ -166,7 +174,18 @@ const thebe_selector_output = ".output, .cell_output"
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
@@ -269,6 +288,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">HASP</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../README.html">HASP Notebooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Setup/Setup.html">Installing the Hubble Advanced Spectral Products Script</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Inputting User Data using the Hubble Advanced Spectral Products Script</a></li>
 
@@ -281,8 +301,10 @@ const thebe_selector_output = ".output, .cell_output"
 
 <li class="toctree-l1"><a class="reference internal" href="../WavelengthAdjustment/WavelengthAdjustment.html">Wavelength Adjustments for Running the Hubble Advanced Spectral Products (HASP) Script</a></li>
 
-<li class="toctree-l1"><a class="reference internal" href="../COSLifetimePositions/COSLifetimePositions.html">Combining COS Data from Multiple Lifetime Positions and Central Wavelengths</a></li>
-
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">HSLA</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../HSLA/README.html">HSLA Notebooks</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">NICMOS</span></p>
 <ul class="nav bd-sidenav">
@@ -366,9 +388,9 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="header-article-items__start">
       
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
-</label></div>
+</button></div>
       
     </div>
   
@@ -393,14 +415,14 @@ const thebe_selector_output = ".output, .cell_output"
       
       <li><a href="https://colab.research.google.com/github/spacetelescope/hst_notebooks/blob/main/notebooks/HASP/CoaddTutorial/CoaddTutorial.ipynb" target="_blank"
    class="btn btn-sm dropdown-item"
-   title="Launch onColab"
+   title="Launch on Colab"
    data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   
-    <img src="../../../_static/images/logo_colab.png">
+    <img alt="Colab logo" src="../../../_static/images/logo_colab.png">
   </span>
 <span class="btn__text-container">Colab</span>
 </a>
@@ -558,9 +580,9 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
-</label>
+</button>
 </div></div>
       
     </div>
@@ -582,7 +604,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Inputting User Data using the Hubble Advanced Spectral Products Script</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#span-style-font-weight-normal-this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script-span"><span style="font-weight:normal">This Notebook is designed to walk you through downloading and using the <strong>Hubble Advanced Spectral Products (HASP)</strong> co-add script.</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script"><span style="font-weight:normal">This Notebook is designed to walk you through downloading and using the <strong>Hubble Advanced Spectral Products (HASP)</strong> co-add script.</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">0. Introduction</a><ul class="nav section-nav flex-column">
@@ -633,12 +655,12 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="inputting-user-data-using-the-hubble-advanced-spectral-products-script">
-<h1>Inputting User Data using the Hubble Advanced Spectral Products Script<a class="headerlink" href="#inputting-user-data-using-the-hubble-advanced-spectral-products-script" title="Permalink to this heading">#</a></h1>
-<section id="span-style-font-weight-normal-this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script-span">
-<h2><span style="font-weight:normal">This Notebook is designed to walk you through downloading and using the <strong><a class="reference external" href="https://archive.stsci.edu/missions-and-data/hst/hasp">Hubble Advanced Spectral Products (HASP)</a></strong> co-add script.</span><a class="headerlink" href="#span-style-font-weight-normal-this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script-span" title="Permalink to this heading">#</a></h2>
+<h1>Inputting User Data using the Hubble Advanced Spectral Products Script<a class="headerlink" href="#inputting-user-data-using-the-hubble-advanced-spectral-products-script" title="Link to this heading">#</a></h1>
+<section id="this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script">
+<h2><span style="font-weight:normal">This Notebook is designed to walk you through downloading and using the <strong><a class="reference external" href="https://archive.stsci.edu/missions-and-data/hst/hasp">Hubble Advanced Spectral Products (HASP)</a></strong> co-add script.</span><a class="headerlink" href="#this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script" title="Link to this heading">#</a></h2>
 </section>
 <section id="learning-goals">
-<h2>Learning Goals:<a class="headerlink" href="#learning-goals" title="Permalink to this heading">#</a></h2>
+<h2>Learning Goals:<a class="headerlink" href="#learning-goals" title="Link to this heading">#</a></h2>
 <p>By the end of this tutorial, you will learn how to:</p>
 <ul class="simple">
 <li><p>Setup a <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment</p></li>
@@ -650,31 +672,31 @@ document.write(`
 </ul>
 </section>
 <section id="table-of-contents">
-<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this heading">#</a></h2>
-<p><strong>0. <span class="xref myst">Introduction</span></strong></p>
-<p><strong>1. <span class="xref myst">Downloading HST Spectroscopic Data</span></strong></p>
-<p>- 1.1 <span class="xref myst">Using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code> to Download STIS Data</span></p>
-<p><strong>2. <span class="xref myst">Running the Co-add Script</span></strong></p>
-<p><strong>3. <span class="xref myst">Working with Co-added Data Products</span></strong></p>
-<p>- 3.1 <span class="xref myst">Inspecting the Output Files</span></p>
-<p>- 3.2 <span class="xref myst">Viewing Co-added STIS Data</span></p>
-<p>- 3.3 <span class="xref myst">Putting it all together with COS Data</span></p>
-<p><strong>4. <span class="xref myst">Downloading HASP Data Products</span></strong></p>
-<p>- 4.1 <span class="xref myst">Downloading Data Products using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code></span></p>
-<p><strong>5. <span class="xref myst">Changing the Threshold Flag</span></strong></p>
-<p>- 5.1 <span class="xref myst">Using <code class="docutils literal notranslate"><span class="pre">Astroquery</span></code> to Download Additional Data</span></p>
-<p>- 5.2 <span class="xref myst">Running the Co-add Script with Multiple Threshold Values</span></p>
-<p>- 5.3 <span class="xref myst">Analyzing the Co-added Spectra of Different Threshold Values</span></p>
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Link to this heading">#</a></h2>
+<p><strong>0. <a class="reference internal" href="#introduction"><span class="xref myst">Introduction</span></a></strong></p>
+<p><strong>1. <a class="reference internal" href="#datadownload"><span class="xref myst">Downloading HST Spectroscopic Data</span></a></strong></p>
+<p>- 1.1 <a class="reference internal" href="#stisdownload"><span class="xref myst">Using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code> to Download STIS Data</span></a></p>
+<p><strong>2. <a class="reference internal" href="#runscript"><span class="xref myst">Running the Co-add Script</span></a></strong></p>
+<p><strong>3. <a class="reference internal" href="#workwithoutput"><span class="xref myst">Working with Co-added Data Products</span></a></strong></p>
+<p>- 3.1 <a class="reference internal" href="#inspectoutput"><span class="xref myst">Inspecting the Output Files</span></a></p>
+<p>- 3.2 <a class="reference internal" href="#viewstis"><span class="xref myst">Viewing Co-added STIS Data</span></a></p>
+<p>- 3.3 <a class="reference internal" href="#cos"><span class="xref myst">Putting it all together with COS Data</span></a></p>
+<p><strong>4. <a class="reference internal" href="#download_prods"><span class="xref myst">Downloading HASP Data Products</span></a></strong></p>
+<p>- 4.1 <a class="reference internal" href="#hasp_query"><span class="xref myst">Downloading Data Products using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code></span></a></p>
+<p><strong>5. <a class="reference internal" href="#threshold"><span class="xref myst">Changing the Threshold Flag</span></a></strong></p>
+<p>- 5.1 <a class="reference internal" href="#downloadthresh"><span class="xref myst">Using <code class="docutils literal notranslate"><span class="pre">Astroquery</span></code> to Download Additional Data</span></a></p>
+<p>- 5.2 <a class="reference internal" href="#threshscriptrun"><span class="xref myst">Running the Co-add Script with Multiple Threshold Values</span></a></p>
+<p>- 5.3 <a class="reference internal" href="#analyzethresh"><span class="xref myst">Analyzing the Co-added Spectra of Different Threshold Values</span></a></p>
 <p><a id = introduction></a></p>
 </section>
 <section id="introduction">
-<h2>0. Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<h2>0. Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
 <p>The <a class="reference external" href="https://github.com/spacetelescope/hasp">Hubble Advanced Spectral Products (HASP) code</a> is a script that co-adds spectra of the same target within programs. This software is able to co-add data taken with the spectrographs onboard the <a class="reference external" href="https://www.stsci.edu/hst">Hubble Space Telescope (HST)</a>; the <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/stis">Space Telescope Imaging Spectrograph (STIS)</a> and the <a class="reference external" href="https://www.stsci.edu/hst/instrumentation/cos">Cosmic Origins Spectrograph (COS)</a>. The <a class="reference external" href="https://archive.stsci.edu/missions-and-data/hst/hasp">Hubble Spectroscopic Legacy Archive (HSLA)</a> uses this script to co-add these instruments’ data from <a class="reference external" href="https://archive.stsci.edu/">The Mikulski Archive for Space Telescopes (MAST)</a> to create high-quality spectra with a broad wavelength coverage (whenever possible from the ultraviolet to the near-infrared) that is publicly available for the scientific community. These custom co-addition notebooks will instruct users on how to produce their own co-adds in cases where the MAST archive data needs special processing or is rejected by the default filters used in the co-add script.</p>
 <p>The script first co-adds the observations for each grating for a given program, then it combines all gratings for the observation set. Finally, it co-adds the spectra of each observation set in the program to produce a fully co-added spectra for each target in a program. Please check out the <a class="reference external" href="https://www.stsci.edu/files/live/sites/www/files/home/hst/instrumentation/cos/documentation/instrument-science-reports-isrs/_documents/ISR2024-01.pdf">COS 2024-01 ISR</a> for more information about HASP.</p>
 <p>This notebook will show users how to download data from MAST, run the co-add script, understand the output files and inspect the abutted data by plotting flux as a function of wavelength. It will also show users how to change the flux threshold flag.</p>
 <p><strong>Please check out our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">Setup.ipynb</a> notebook before running this tutorial to learn how to install and run the co-add code.</strong></p>
 <section id="imports">
-<h3>Imports<a class="headerlink" href="#imports" title="Permalink to this heading">#</a></h3>
+<h3>Imports<a class="headerlink" href="#imports" title="Link to this heading">#</a></h3>
 <p>We will be using multiple libraries to retrieve and analyze data. We will use:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Path.pathlib</span></code> to create product and data directories</p></li>
@@ -693,16 +715,16 @@ document.write(`
 <p>This will download the dependencies that are necessary to run this current notebook. Let’s import all of our packages that we will use in this notebook and print our <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment by running the next cell:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">from</span> <span class="nn">pathlib</span> <span class="kn">import</span> <span class="n">Path</span>
-<span class="kn">from</span> <span class="nn">astroquery.mast</span> <span class="kn">import</span> <span class="n">Observations</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-<span class="kn">import</span> <span class="nn">glob</span> <span class="k">as</span> <span class="nn">glob</span>
-<span class="kn">from</span> <span class="nn">astropy.io</span> <span class="kn">import</span> <span class="n">fits</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">subprocess</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">interp1d</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astroquery.mast</span><span class="w"> </span><span class="kn">import</span> <span class="n">Observations</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">shutil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">glob</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">glob</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">astropy.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">fits</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">subprocess</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.interpolate</span><span class="w"> </span><span class="kn">import</span> <span class="n">interp1d</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Currently active conda environment:&quot;</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;CONDA_PREFIX&quot;</span><span class="p">))</span>
 </pre></div>
@@ -734,11 +756,11 @@ document.write(`
 </section>
 </section>
 <section id="downloading-hst-spectroscopic-data">
-<h2>1. Downloading HST Spectroscopic Data<a class="headerlink" href="#downloading-hst-spectroscopic-data" title="Permalink to this heading">#</a></h2>
+<h2>1. Downloading HST Spectroscopic Data<a class="headerlink" href="#downloading-hst-spectroscopic-data" title="Link to this heading">#</a></h2>
 <p>Now that we have a <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment created and the co-add code downloaded, we can start downloading data using <code class="docutils literal notranslate"><span class="pre">Observations</span></code> class from the Python package <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code>. Here we will download two datasets, one taken with STIS and the other taken with COS.</p>
 <p><a id = stisdownload></a></p>
 <section id="using-astroquery-to-download-stis-data">
-<h3>1.1 Using <code class="docutils literal notranslate"><span class="pre">Astroquery</span></code> to Download STIS Data<a class="headerlink" href="#using-astroquery-to-download-stis-data" title="Permalink to this heading">#</a></h3>
+<h3>1.1 Using <code class="docutils literal notranslate"><span class="pre">Astroquery</span></code> to Download STIS Data<a class="headerlink" href="#using-astroquery-to-download-stis-data" title="Link to this heading">#</a></h3>
 <p>We will be downloading STIS data for the white dwarf <a class="reference external" href="http://simbad.u-strasbg.fr/simbad/sim-id?Ident=GD+++71">GD71</a>; this object is a well-known primary white dwarf standard. We will specifically download data from Program 7656, which has observations of GD71 using the gratings <code class="docutils literal notranslate"><span class="pre">G230L</span></code> and <code class="docutils literal notranslate"><span class="pre">G140L</span></code>.</p>
 <p>We can start with querying the MAST database for the STIS program’s data. This will give us a list of <em>all</em> observations for the program.</p>
 <div class="cell docutils container">
@@ -793,7 +815,7 @@ document.write(`
 <p>When we downloaded the data using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>, it created a directory <code class="docutils literal notranslate"><span class="pre">./stis_data/mastDownload/HST</span></code>, with separate folders for each different dataset ID. The script will need all of our newly downloaded data product files in a single directory, so we must move all STIS files to our <code class="docutils literal notranslate"><span class="pre">./stis_data</span></code> directory. We will create a function to consolidate our data, since we will be utilizing it for two additional datasets later on in the tutorial.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">consolidate_files</span><span class="p">(</span><span class="n">data_path</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">consolidate_files</span><span class="p">(</span><span class="n">data_path</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Consolidate all files to single directory; necessary for HASP script run.</span>
 <span class="sd">    ---------------</span>
@@ -848,7 +870,7 @@ document.write(`
 </section>
 </section>
 <section id="running-the-co-add-script">
-<h2>2. Running the Co-add Script<a class="headerlink" href="#running-the-co-add-script" title="Permalink to this heading">#</a></h2>
+<h2>2. Running the Co-add Script<a class="headerlink" href="#running-the-co-add-script" title="Link to this heading">#</a></h2>
 <p>Now that we’ve downloaded the GD71 STIS data, we can run the co-add script. Currently, the co-add code abuts spectra for a single program. Run the script by using the next cell’s command.</p>
 <p><strong>Note: Make sure that you are in the <code class="docutils literal notranslate"><span class="pre">hasp-env</span></code> <code class="docutils literal notranslate"><span class="pre">conda</span></code> environment that we created at the beginning of the <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">Setup.ipynb</a> notebook.</strong></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">-i</span></code> parameter is the input directory (i.e, where the FITS files are located). <code class="docutils literal notranslate"><span class="pre">-o</span></code> is the directory that will contain the newly created co-added products. Note that if you want to exclude certain data files from the co-add, you can just remove them from the input directory. There is more information about this (and the other flags) in our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">Setup.ipynb</a> notebook.</p>
@@ -863,12 +885,12 @@ document.write(`
 <p><a id = workwithoutput></a></p>
 </section>
 <section id="working-with-co-added-data-products">
-<h2>3. Working with Co-added Data Products<a class="headerlink" href="#working-with-co-added-data-products" title="Permalink to this heading">#</a></h2>
+<h2>3. Working with Co-added Data Products<a class="headerlink" href="#working-with-co-added-data-products" title="Link to this heading">#</a></h2>
 <p>With the newly co-added files in the <code class="docutils literal notranslate"><span class="pre">./stis_products/output</span></code> directory, we can begin to inspect the data.</p>
 <p><a id = inspectoutput></a></p>
 <section id="understanding-the-output-files">
-<h3>3.1 Understanding the Output Files<a class="headerlink" href="#understanding-the-output-files" title="Permalink to this heading">#</a></h3>
-<p><strong><em>The following information about the output file naming conventions is in our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">Setup.ipynb</a> notebook. If you’re already familiar with this, you can skip to <span class="xref myst">Section 4.2</span>, where we view our co-added spectra.</em></strong></p>
+<h3>3.1 Understanding the Output Files<a class="headerlink" href="#understanding-the-output-files" title="Link to this heading">#</a></h3>
+<p><strong><em>The following information about the output file naming conventions is in our <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP/Setup">Setup.ipynb</a> notebook. If you’re already familiar with this, you can skip to <a class="reference internal" href="#viewstis"><span class="xref myst">Section 4.2</span></a>, where we view our co-added spectra.</em></strong></p>
 <p>Let’s look at the <code class="docutils literal notranslate"><span class="pre">./stis_products/output</span></code> directory to look at the newly abutted spectra. Currently, the script outputs abutted products for a single program.</p>
 <p>The script produces multiple different files with abutted spectra. Currently, the script outputs abutted products for a single program. It first creates co-added spectra for each grating of a single observation set:</p>
 <p><code class="docutils literal notranslate"><span class="pre">hst_programID_instrument_targetname_grating_obset_cspec.fits</span></code></p>
@@ -904,7 +926,7 @@ document.write(`
 <p><a id = viewstis></a></p>
 </section>
 <section id="viewing-the-co-added-data">
-<h3>3.2 Viewing the Co-added Data<a class="headerlink" href="#viewing-the-co-added-data" title="Permalink to this heading">#</a></h3>
+<h3>3.2 Viewing the Co-added Data<a class="headerlink" href="#viewing-the-co-added-data" title="Link to this heading">#</a></h3>
 <p>Let’s take a look at the co-added spectra that we just created. We will create a plot of flux as a function of wavelength using <code class="docutils literal notranslate"><span class="pre">matplotlib.pyplot</span></code>.</p>
 <p>With the current version of the HASP script, the fully abutted filename should be:</p>
 <p><code class="docutils literal notranslate"><span class="pre">hst_7656_stis_gd71_sg140l-sg230l-g430l-g750l_o4a5_cspec.fits</span></code></p>
@@ -950,7 +972,7 @@ document.write(`
 <p><a id = cos></a></p>
 </section>
 <section id="putting-it-all-together-with-cos-data">
-<h3>3.3 Putting it all together with COS data<a class="headerlink" href="#putting-it-all-together-with-cos-data" title="Permalink to this heading">#</a></h3>
+<h3>3.3 Putting it all together with COS data<a class="headerlink" href="#putting-it-all-together-with-cos-data" title="Link to this heading">#</a></h3>
 <p>Let’s combine all of the STIS work from above and do another example, but this time using COS data instead of STIS. We will use the same target, GD71, and download the data from Program 11479. This has observations of GD71 using the gratings <code class="docutils literal notranslate"><span class="pre">G230L</span></code>, <code class="docutils literal notranslate"><span class="pre">G185M</span></code>, <code class="docutils literal notranslate"><span class="pre">G225M</span></code>, and <code class="docutils literal notranslate"><span class="pre">G285M</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1080,13 +1102,13 @@ document.write(`
 </section>
 </section>
 <section id="downloading-hasp-data-products">
-<h2>4. Downloading HASP Data Products<a class="headerlink" href="#downloading-hasp-data-products" title="Permalink to this heading">#</a></h2>
+<h2>4. Downloading HASP Data Products<a class="headerlink" href="#downloading-hasp-data-products" title="Link to this heading">#</a></h2>
 <p>As of January 2024, the HASP data products are available for download via <code class="docutils literal notranslate"><span class="pre">astroquery</span></code>. The products will also be available for query and download on the official HASP web search form (still a work in progress at the time of this notebook’s publishing).</p>
 <p>Users can download coadded data themselves; we will show an example of this with a STIS coadd.</p>
 <p><a id = hasp_query></a></p>
 <section id="downloading-data-products-using-astroquery">
-<h3>4.1 Downloading Data Products using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code><a class="headerlink" href="#downloading-data-products-using-astroquery" title="Permalink to this heading">#</a></h3>
-<p>We can use <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code>’s <code class="docutils literal notranslate"><span class="pre">Observations</span></code> module to download data products, similar to how we downloaded our STIS and COS data in <span class="xref myst">Section 1.1</span> and <span class="xref myst">Section 3.3</span>, respectively. Let’s download GD71 coadds for the STIS example that we created in the previous section.</p>
+<h3>4.1 Downloading Data Products using <code class="docutils literal notranslate"><span class="pre">astroquery</span></code><a class="headerlink" href="#downloading-data-products-using-astroquery" title="Link to this heading">#</a></h3>
+<p>We can use <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code>’s <code class="docutils literal notranslate"><span class="pre">Observations</span></code> module to download data products, similar to how we downloaded our STIS and COS data in <a class="reference internal" href="#stisdownload"><span class="xref myst">Section 1.1</span></a> and <a class="reference internal" href="#cos"><span class="xref myst">Section 3.3</span></a>, respectively. Let’s download GD71 coadds for the STIS example that we created in the previous section.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stis_query</span> <span class="o">=</span> <span class="n">Observations</span><span class="o">.</span><span class="n">query_criteria</span><span class="p">(</span>
@@ -1236,7 +1258,7 @@ document.write(`
 </section>
 </section>
 <section id="changing-the-threshold-flag">
-<h2>5. Changing the Threshold Flag<a class="headerlink" href="#changing-the-threshold-flag" title="Permalink to this heading">#</a></h2>
+<h2>5. Changing the Threshold Flag<a class="headerlink" href="#changing-the-threshold-flag" title="Link to this heading">#</a></h2>
 <p>The flux threshold flag is an optional flag that can be used to change the number of files that are co-added based on the flux of each spectra. When determining which files to abut, the script first creates a general co-add using all of the input files, and then iterates through each file to calculate the scaled median deviation. The script rejects a file if:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1249,8 +1271,8 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 <p><a id = downloadthresh></a></p>
 </section>
 <section id="downloading-the-data">
-<h2>5.1 Downloading the Data<a class="headerlink" href="#downloading-the-data" title="Permalink to this heading">#</a></h2>
-<p>We will first download an additional dataset to illustrate how the co-add code changes abutment when the threshold flag is changed. We will download data for the spectroscopic binary, <a class="reference external" href="https://simbad.cds.unistra.fr/simbad/sim-coo?Coord=332.88126259897996+18.092873506782&amp;CooFrame=FK5&amp;CooEpoch=2000&amp;CooEqui=2000&amp;CooDefinedFrames=none&amp;Radius=2&amp;Radius.unit=arcmin&amp;submit=submit+query&amp;CoordList=">BD+17D4708</a> from Program 9631. We will run the script with three different threshold values: <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">-1,</span> <span class="pre">-2,</span> <span class="pre">-50</span></code>.</p>
+<h2>5.1 Downloading the Data<a class="headerlink" href="#downloading-the-data" title="Link to this heading">#</a></h2>
+<p>We will first download an additional dataset to illustrate how the co-add code changes abutment when the threshold flag is changed. We will download data for the spectroscopic binary, <a class="reference external" href="https://simbad.cds.unistra.fr/simbad/sim-coo?Coord=332.88126259897996+18.092873506782&amp;amp;CooFrame=FK5&amp;amp;CooEpoch=2000&amp;amp;CooEqui=2000&amp;amp;CooDefinedFrames=none&amp;amp;Radius=2&amp;amp;Radius.unit=arcmin&amp;amp;submit=submit+query&amp;amp;CoordList=">BD+17D4708</a> from Program 9631. We will run the script with three different threshold values: <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">-1,</span> <span class="pre">-2,</span> <span class="pre">-50</span></code>.</p>
 <p>First we will query and download the data using <code class="docutils literal notranslate"><span class="pre">Observations</span></code> from <code class="docutils literal notranslate"><span class="pre">astroquery.mast</span></code>:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1304,7 +1326,7 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 <p><a id = threshscriptrun></a></p>
 </section>
 <section id="running-the-co-add-script-with-different-threshold-values">
-<h2>5.2 Running the Co-add Script with Different Threshold Values<a class="headerlink" href="#running-the-co-add-script-with-different-threshold-values" title="Permalink to this heading">#</a></h2>
+<h2>5.2 Running the Co-add Script with Different Threshold Values<a class="headerlink" href="#running-the-co-add-script-with-different-threshold-values" title="Link to this heading">#</a></h2>
 <p>Let’s first organize our data so that all data files are in a single directory instead of separate observation set directories.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1316,7 +1338,7 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 <p>Now that we’ve downloaded our data and organized it to be properly run by the script, we can run the code using different threshold values. Below is a function that runs the script using inputted threshold values, which will allow us to run the code in a single cell rather than multiple.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">run_script</span><span class="p">(</span><span class="n">indir</span><span class="p">,</span> <span class="n">outdir</span><span class="p">,</span> <span class="n">thresh</span><span class="p">):</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">run_script</span><span class="p">(</span><span class="n">indir</span><span class="p">,</span> <span class="n">outdir</span><span class="p">,</span> <span class="n">thresh</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
 <span class="sd">    Run the hasp wrapper script with different thresholds.</span>
 <span class="sd">    -------------------</span>
@@ -1371,7 +1393,7 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 <p><a id = analyzethresh></a></p>
 </section>
 <section id="analyzing-the-different-co-added-spectra-of-different-threshold-values">
-<h2>5.3 Analyzing the Different Co-added Spectra of Different Threshold Values<a class="headerlink" href="#analyzing-the-different-co-added-spectra-of-different-threshold-values" title="Permalink to this heading">#</a></h2>
+<h2>5.3 Analyzing the Different Co-added Spectra of Different Threshold Values<a class="headerlink" href="#analyzing-the-different-co-added-spectra-of-different-threshold-values" title="Link to this heading">#</a></h2>
 <p>Now that we’ve run the script on our dataset using differnet threshold values, we can start to analyze the differences between them.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">run_script</span></code> function created multiple folders for the abutted products; one folder for each threshold value (ex. <code class="docutils literal notranslate"><span class="pre">./out-50</span></code>). In each folder is the fully co-added spectra. At the time of this notebook, the fully co-added filename is:</p>
 <p><code class="docutils literal notranslate"><span class="pre">hst_9631_stis_bdp17d4708_g230lb-g430l-g750l_o8h1_cspec.fits</span></code></p>
@@ -1405,7 +1427,7 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 </div>
 <p>As we can see, as we increase the threshold value (<code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">-50</span></code> -&gt; <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">-1</span></code>) we went from 12 files being used to only 6. Since we are using more data with the lower threshold (<code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">-50</span></code>), we should see an increase in SNR.</p>
 <section id="looking-at-snr">
-<h3>Looking at SNR:<a class="headerlink" href="#looking-at-snr" title="Permalink to this heading">#</a></h3>
+<h3>Looking at SNR:<a class="headerlink" href="#looking-at-snr" title="Link to this heading">#</a></h3>
 <p>We’ll plot the SNR of both coadds below.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1480,7 +1502,7 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 <p>We can clearly see above that using more files in the co-add substantially increases SNR. This is especially prevalent in the grey highlighted section of the top plot, where we set <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">-1</span></code>. The number of files used with that threshold value were 6 files, whereas the default threshold value of <code class="docutils literal notranslate"><span class="pre">t</span> <span class="pre">=</span> <span class="pre">-50</span></code> used 12 files.</p>
 </section>
 <section id="looking-at-flux">
-<h3>Looking at Flux:<a class="headerlink" href="#looking-at-flux" title="Permalink to this heading">#</a></h3>
+<h3>Looking at Flux:<a class="headerlink" href="#looking-at-flux" title="Link to this heading">#</a></h3>
 <p>We’re going to create two diffrent plots to analyze our flux data: a standard flux vs wavelength plot, and a differential plot. We will also calculate the percent change in flux between the threshold values vs the default.</p>
 <p>A differential plot shows the absolute differences between two datasets; in our case, we will be seeing the flux difference at each wavelength between one threshold value’s co-add and the default co-add. However, we will first need to interpolate the spectra to a common wavelength grid. Essentially, we will be adjusting the wavelength values so the two datasets can share the same wavelength points.</p>
 <div class="cell docutils container">
@@ -1606,18 +1628,18 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="congrats-on-completing-the-notebook">
-<h1>Congrats on completing the notebook!<a class="headerlink" href="#congrats-on-completing-the-notebook" title="Permalink to this heading">#</a></h1>
+<h1>Congrats on completing the notebook!<a class="headerlink" href="#congrats-on-completing-the-notebook" title="Link to this heading">#</a></h1>
 <section id="there-are-more-tutorial-notebooks-for-custom-co-addition-cases-in-this-repo-check-them-out">
-<h2>There are more tutorial notebooks for custom co-addition cases in <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP">this repo</a>, check them out!<a class="headerlink" href="#there-are-more-tutorial-notebooks-for-custom-co-addition-cases-in-this-repo-check-them-out" title="Permalink to this heading">#</a></h2>
+<h2>There are more tutorial notebooks for custom co-addition cases in <a class="reference external" href="https://github.com/spacetelescope/hst_notebooks/tree/main/notebooks/HASP">this repo</a>, check them out!<a class="headerlink" href="#there-are-more-tutorial-notebooks-for-custom-co-addition-cases-in-this-repo-check-them-out" title="Link to this heading">#</a></h2>
 </section>
 <section id="about-this-notebook">
-<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Permalink to this heading">#</a></h2>
+<h2>About this Notebook<a class="headerlink" href="#about-this-notebook" title="Link to this heading">#</a></h2>
 <p><strong>Author:</strong> Sierra Gomez (sigomez&#64;stsci.edu)</p>
 <p><strong>Updated on:</strong> 01/29/2024</p>
 <p><em>This tutorial was generated to be in compliance with the <a class="reference external" href="https://github.com/spacetelescope/style-guides">STScI style guides</a> and would like to cite the <a class="reference external" href="https://github.com/spacetelescope/style-guides/blob/master/templates/example_notebook.ipynb">Jupyter guide</a> in particular.</em></p>
 </section>
 <section id="citations">
-<h2>Citations<a class="headerlink" href="#citations" title="Permalink to this heading">#</a></h2>
+<h2>Citations<a class="headerlink" href="#citations" title="Link to this heading">#</a></h2>
 <p>If you use the following packages for published research, please cite the authors. Follow these links for more information about citations:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://docs.astropy.org/en/stable/index.html">Citing <code class="docutils literal notranslate"><span class="pre">astropy</span></code></a></p></li>
@@ -1626,7 +1648,8 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
 <li><p><a class="reference external" href="https://numpy.org/citing-numpy/">Citing <code class="docutils literal notranslate"><span class="pre">numpy</span></code></a></p></li>
 <li><p><a class="reference external" href="https://scipy.org/citing-scipy/">Citing <code class="docutils literal notranslate"><span class="pre">scipy</span></code></a></p></li>
 </ul>
-<a class="reference internal image-reference" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png"><img alt="Space Telescope Logo" src="https://raw.githubusercontent.com/spacetelescope/notebooks/master/assets/stsci_pri_combo_mark_horizonal_white_bkgd.png" style="width: 200px;" />
+</a>
 </section>
 </section>
 
@@ -1695,7 +1718,7 @@ wavelength bin of the input spectrum is <span class="math notranslate nohighligh
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Inputting User Data using the Hubble Advanced Spectral Products Script</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#span-style-font-weight-normal-this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script-span"><span style="font-weight:normal">This Notebook is designed to walk you through downloading and using the <strong>Hubble Advanced Spectral Products (HASP)</strong> co-add script.</span></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-notebook-is-designed-to-walk-you-through-downloading-and-using-the-hubble-advanced-spectral-products-hasp-co-add-script"><span style="font-weight:normal">This Notebook is designed to walk you through downloading and using the <strong>Hubble Advanced Spectral Products (HASP)</strong> co-add script.</span></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-goals">Learning Goals:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#table-of-contents">Table of Contents</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">0. Introduction</a><ul class="nav section-nav flex-column">
@@ -1758,7 +1781,7 @@ By STScI
 
   <p class="copyright">
     
-      © Copyright 2022-2024.
+      © Copyright 2022-2025.
       <br/>
     
   </p>
